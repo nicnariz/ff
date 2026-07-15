@@ -1,0 +1,1 @@
+{ "expo": { "name": "Família Feliz", "slug": "familia-feliz", "version": "0.1.0", "scheme": "familiafeliz", "orientation": "portrait", "userInterfaceStyle": "light", "plugins": ["expo-router", "expo-secure-store"], "experiments": { "typedRoutes": true } } }

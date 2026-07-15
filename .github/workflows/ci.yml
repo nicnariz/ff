@@ -1,0 +1,28 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env: { POSTGRES_DB: familia_feliz_test, POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres }
+        ports: ['5432:5432']
+        options: >- 
+          --health-cmd "pg_isready -U postgres" --health-interval 10s --health-timeout 5s --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/familia_feliz_test?schema=public
+      JWT_ACCESS_SECRET: change-this-to-a-ci-only-secret-32chars
+      JWT_REFRESH_SECRET: change-this-to-another-ci-secret-32chars
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm db:generate
+      - run: pnpm --filter @familia-feliz/api prisma:migrate -- --name ci-init
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm --filter @familia-feliz/api build

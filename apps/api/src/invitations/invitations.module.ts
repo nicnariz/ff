@@ -1,0 +1,1 @@
+import { Module } from '@nestjs/common'; import { FamiliesModule } from '../families/families.module'; import { InvitationsController } from './invitations.controller'; import { InvitationsService } from './invitations.service'; @Module({imports:[FamiliesModule],controllers:[InvitationsController],providers:[InvitationsService]}) export class InvitationsModule{}

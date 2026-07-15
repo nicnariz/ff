@@ -1,0 +1,257 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+}
+enum FamilyStatus {
+  ACTIVE
+  INACTIVE
+  ARCHIVED
+}
+enum FamilyMemberRole {
+  ADMIN
+  GUARDIAN
+  MEMBER
+}
+enum MemberStatus {
+  ACTIVE
+  INACTIVE
+  REMOVED
+  PENDING
+}
+enum InvitationStatus {
+  ACTIVE
+  EXPIRED
+  REVOKED
+  FULLY_USED
+}
+enum TaskStatus {
+  ACTIVE
+  INACTIVE
+  CANCELED
+}
+enum TaskAssignmentStatus {
+  PENDING
+  IN_PROGRESS
+  WAITING_APPROVAL
+  COMPLETED
+  COMPLETED_LATE
+  REJECTED
+  OVERDUE
+  CANCELED
+}
+enum ApprovalStatus {
+  APPROVED
+  REJECTED
+  ADJUSTMENT_REQUESTED
+}
+enum AllowanceStatus {
+  OPEN
+  CALCULATED
+  APPROVED
+  PAID
+  CANCELED
+}
+enum RewardStatus {
+  ACTIVE
+  INACTIVE
+}
+
+model User {
+  id String @id @default(cuid())
+  name String
+  email String @unique
+  passwordHash String
+  refreshTokenHash String?
+  birthDate DateTime?
+  avatarUrl String?
+  status UserStatus @default(ACTIVE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  familiesCreated Family[] @relation("FamilyCreator")
+  memberships FamilyMember[]
+  completions TaskCompletion[] @relation("CompletionAuthor")
+  approvals TaskApproval[] @relation("ApprovalReviewer")
+  notifications Notification[]
+  auditLogs AuditLog[]
+}
+
+model Family {
+  id String @id @default(cuid())
+  name String
+  avatarUrl String?
+  invitationCode String @unique
+  createdById String
+  status FamilyStatus @default(ACTIVE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  creator User @relation("FamilyCreator", fields: [createdById], references: [id])
+  members FamilyMember[]
+  invitations FamilyInvitation[]
+  tasks Task[]
+  rewards Reward[]
+  allowances AllowancePeriod[]
+  auditLogs AuditLog[]
+}
+
+model FamilyMember {
+  id String @id @default(cuid())
+  familyId String
+  userId String
+  role FamilyMemberRole
+  nickname String?
+  canCreateTasks Boolean @default(false)
+  canApproveTasks Boolean @default(false)
+  status MemberStatus @default(ACTIVE)
+  joinedAt DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  family Family @relation(fields: [familyId], references: [id])
+  user User @relation(fields: [userId], references: [id])
+  assignments TaskAssignment[]
+  allowances AllowancePeriod[]
+  @@unique([familyId, userId])
+}
+
+model FamilyInvitation {
+  id String @id @default(cuid())
+  familyId String
+  codeHash String @unique
+  codePrefix String
+  createdById String
+  role FamilyMemberRole @default(MEMBER)
+  expiresAt DateTime
+  maximumUses Int
+  currentUses Int @default(0)
+  status InvitationStatus @default(ACTIVE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  family Family @relation(fields: [familyId], references: [id])
+}
+
+model Task {
+  id String @id @default(cuid())
+  familyId String
+  title String
+  description String?
+  category String?
+  points Int
+  weight Int @default(1)
+  priority Int @default(0)
+  recurrenceType String @default("ONCE")
+  recurrenceRule Json?
+  requiresApproval Boolean @default(false)
+  requiresEvidence Boolean @default(false)
+  isEssential Boolean @default(false)
+  latePenaltyType String @default("NONE")
+  latePenaltyValue Decimal? @db.Decimal(10, 2)
+  createdBy String
+  status TaskStatus @default(ACTIVE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  family Family @relation(fields: [familyId], references: [id])
+  assignments TaskAssignment[]
+}
+
+model TaskAssignment {
+  id String @id @default(cuid())
+  taskId String
+  familyMemberId String
+  scheduledDate DateTime
+  dueDate DateTime
+  completedAt DateTime?
+  approvedAt DateTime?
+  status TaskAssignmentStatus @default(PENDING)
+  expectedPoints Int
+  earnedPoints Int?
+  delayMinutes Int @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  task Task @relation(fields: [taskId], references: [id])
+  familyMember FamilyMember @relation(fields: [familyMemberId], references: [id])
+  completion TaskCompletion?
+  approvals TaskApproval[]
+}
+
+model TaskCompletion {
+  id String @id @default(cuid())
+  taskAssignmentId String @unique
+  completedBy String
+  comment String?
+  evidenceUrl String?
+  submittedAt DateTime @default(now())
+  assignment TaskAssignment @relation(fields: [taskAssignmentId], references: [id])
+  author User @relation("CompletionAuthor", fields: [completedBy], references: [id])
+}
+
+model TaskApproval {
+  id String @id @default(cuid())
+  taskAssignmentId String
+  reviewedBy String
+  status ApprovalStatus
+  comment String?
+  bonusPoints Int @default(0)
+  reviewedAt DateTime @default(now())
+  assignment TaskAssignment @relation(fields: [taskAssignmentId], references: [id])
+  reviewer User @relation("ApprovalReviewer", fields: [reviewedBy], references: [id])
+}
+
+model AllowancePeriod {
+  id String @id @default(cuid())
+  familyId String
+  familyMemberId String
+  startDate DateTime
+  endDate DateTime
+  maximumAmount Decimal @db.Decimal(10, 2)
+  expectedWeightedPoints Int
+  earnedWeightedPoints Int
+  performancePercentage Decimal @db.Decimal(5, 2)
+  calculatedAmount Decimal @db.Decimal(10, 2)
+  approvedAmount Decimal? @db.Decimal(10, 2)
+  status AllowanceStatus @default(OPEN)
+  family Family @relation(fields: [familyId], references: [id])
+  member FamilyMember @relation(fields: [familyMemberId], references: [id])
+}
+
+model Reward {
+  id String @id @default(cuid())
+  familyId String
+  name String
+  description String?
+  requiredPoints Int
+  status RewardStatus @default(ACTIVE)
+  family Family @relation(fields: [familyId], references: [id])
+}
+
+model Notification {
+  id String @id @default(cuid())
+  userId String
+  type String
+  title String
+  message String
+  readAt DateTime?
+  createdAt DateTime @default(now())
+  user User @relation(fields: [userId], references: [id])
+}
+
+model AuditLog {
+  id String @id @default(cuid())
+  familyId String
+  userId String?
+  action String
+  entity String
+  entityId String
+  previousData Json?
+  newData Json?
+  createdAt DateTime @default(now())
+  family Family @relation(fields: [familyId], references: [id])
+  user User? @relation(fields: [userId], references: [id])
+}

@@ -1,0 +1,16 @@
+{
+  "name": "familia-feliz",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev:api": "pnpm --filter @familia-feliz/api start:dev",
+    "dev:mobile": "pnpm --filter @familia-feliz/mobile start",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm --filter @familia-feliz/api test",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter @familia-feliz/api prisma:generate",
+    "db:migrate": "pnpm --filter @familia-feliz/api prisma:migrate"
+  },
+  "devDependencies": { "prettier": "^3.5.1" }
+}

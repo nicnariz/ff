@@ -1,0 +1,1 @@
+import { Text, View } from 'react-native'; export default function Members(): JSX.Element { return <View style={{padding:24}}><Text>Lista de membros</Text><Text>Esta tela será preenchida com a consulta paginada da família ativa.</Text></View>; }
