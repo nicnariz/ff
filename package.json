@@ -7,10 +7,18 @@
     "dev:mobile": "pnpm --filter @familia-feliz/mobile start",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
-    "test": "pnpm --filter @familia-feliz/api test",
+    "test": "pnpm test:unit && pnpm test:mobile",
+    "test:unit": "pnpm --filter @familia-feliz/api test",
+    "test:mobile": "pnpm --filter @familia-feliz/mobile test",
+    "test:integration": "pnpm --filter @familia-feliz/api test:integration",
+    "test:e2e": "pnpm --filter @familia-feliz/api test:e2e",
+    "test:all": "pnpm test && pnpm test:integration && pnpm test:e2e",
     "typecheck": "pnpm -r typecheck",
     "db:generate": "pnpm --filter @familia-feliz/api prisma:generate",
-    "db:migrate": "pnpm --filter @familia-feliz/api prisma:migrate"
+    "db:migrate": "pnpm --filter @familia-feliz/api prisma:migrate",
+    "db:test:migrate": "pnpm --filter @familia-feliz/api prisma:test:migrate",
+    "db:test:reset": "pnpm --filter @familia-feliz/api prisma:test:reset",
+    "prisma:validate": "pnpm --filter @familia-feliz/api prisma:validate"
   },
   "devDependencies": { "prettier": "^3.5.1" }
 }

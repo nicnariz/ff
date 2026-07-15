@@ -1,0 +1,3 @@
+import { resolveNavigationTarget } from './navigation';
+const base={sessionLoaded:true,authenticated:true,familiesLoaded:true,familyCount:0,activeFamilyId:null};
+describe('navigation',()=>{it('waits for session',()=>expect(resolveNavigationTarget({...base,sessionLoaded:false})).toBe('LOADING'));it('opens login',()=>expect(resolveNavigationTarget({...base,authenticated:false})).toBe('LOGIN'));it('opens setup',()=>expect(resolveNavigationTarget(base)).toBe('FAMILY_SETUP'));it('opens selection',()=>expect(resolveNavigationTarget({...base,familyCount:2})).toBe('FAMILY_SELECTION'));it('opens active family',()=>expect(resolveNavigationTarget({...base,familyCount:1,activeFamilyId:'a'})).toBe('APP'));});

@@ -2,9 +2,13 @@ node_modules/
 .pnpm-store/
 .expo/
 dist/
+dist-web/
+build/
 coverage/
 .env
 .env.*
 !.env.example
 *.log
 apps/api/generated/
+apps/api/prisma/*.db
+apps/api/prisma/*.db-journal

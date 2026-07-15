@@ -1,16 +1,13 @@
-# App Família Feliz
+# App Familia Feliz
 
-Monorepo do MVP para gestão de tarefas familiares, construído com Expo/React Native e NestJS.
+Monorepo do MVP para gestao de responsabilidades familiares, com Expo/React Native, NestJS, Prisma e PostgreSQL.
 
-## Requisitos
+## Inicio rapido
 
-- Node.js 22 LTS
-- pnpm 9 (`corepack enable`)
-- Docker Desktop
+Requisitos: Node.js 22, pnpm 9 e Docker Desktop.
 
-## Início rápido
-
-```bash
+```powershell
+corepack enable
 pnpm install
 Copy-Item .env.example apps/api/.env
 Copy-Item .env.example apps/mobile/.env
@@ -21,30 +18,61 @@ pnpm dev:api
 pnpm dev:mobile
 ```
 
-No Windows PowerShell, use os comandos `Copy-Item` acima. Em macOS/Linux, use `cp`.
+API: `http://localhost:3000/api/v1`. Swagger: `http://localhost:3000/docs`.
 
-API: `http://localhost:3000/api/v1`; Swagger: `http://localhost:3000/docs`.
+## Validacao
 
-## Comandos
-
-```bash
-pnpm lint
+```powershell
 pnpm typecheck
+pnpm lint
 pnpm test
+pnpm build
+pnpm prisma:validate
 pnpm db:generate
-pnpm db:migrate
 ```
 
-Consulte [a arquitetura](docs/architecture/overview.md) e a [decisão de autenticação](docs/decisions/001-authentication.md).
+Com `DATABASE_URL_TEST` apontando para um PostgreSQL exclusivo de testes:
 
-## Famílias e convites
+```powershell
+pnpm db:test:migrate
+pnpm test:integration
+pnpm test:e2e
+```
 
-As rotas autenticadas permitem criar, listar, consultar e atualizar famílias, listar e administrar membros, e criar/listar/revogar convites. Convites públicos expõem somente nome da família, papel oferecido, validade e situação. Consulte a [ADR 002](docs/decisions/002-family-membership-and-authorization.md).
+Os comandos de integracao e e2e falham explicitamente enquanto as suites reais nao forem implementadas; eles nunca usam `DATABASE_URL` como substituta silenciosa.
 
-## Validação da segunda entrega
+## Fluxo de familias no mobile
 
-Executados com sucesso: `pnpm typecheck`, `pnpm lint`, `pnpm test`, `pnpm --filter @familia-feliz/api build`, `pnpm db:generate` e `pnpm --filter @familia-feliz/api prisma:validate`.
+O aplicativo restaura a sessao e a familia ativa, valida a selecao contra a lista atual e direciona o usuario para login, setup, selecao ou inicio. Detalhes, membros e convites usam chaves TanStack Query que incluem `familyId`; a troca cancela e remove consultas da familia anterior. O fluxo inclui criacao de familia, entrada por convite, criacao de convite para ADMIN, membros paginados, troca de familia e logout.
 
-O Docker não está instalado no ambiente atual; por isso a migração não foi aplicada a um PostgreSQL real e testes de integração com banco permanecem bloqueados. Em um ambiente com Docker: inicie `docker compose up -d`, copie `.env.example` para `apps/api/.env`, execute `pnpm db:migrate` e rode os testes de integração quando adicionados.
+Consulte [a arquitetura](docs/architecture/overview.md), a [ADR 002](docs/decisions/002-family-membership-and-authorization.md) e o [guia do Windows](docs/setup/windows-development-environment.md).
 
-No aplicativo, a família ativa é persistida no Secure Store. Ao restaurar a sessão, a seleção é usada somente se ainda constar na lista devolvida pela API; caso contrário é removida.
+## Validacao da segunda entrega
+
+| Item | Situacao local |
+|---|---|
+| Typecheck e lint | Aprovados localmente |
+| Testes unitarios da API | 10 aprovados, 0 falhos, 0 ignorados |
+| Testes unitarios mobile | 23 aprovados, 0 falhos, 0 ignorados |
+| Build da API e export web do Expo | Aprovados localmente |
+| Prisma validate e generate | Aprovados com a URL local de exemplo; nenhuma conexao foi realizada |
+| Migracao PostgreSQL | Bloqueada sem Docker/PostgreSQL |
+| Integracao, e2e HTTP e concorrencia real | Pendentes de implementacao e PostgreSQL |
+| GitHub Actions | Workflow criado, ainda sem evidencia de execucao desta rodada |
+
+## Checklist do Product Owner
+
+- [x] Git instalado
+- [ ] Docker Desktop instalado
+- [ ] Docker em execucao
+- [x] Repositorio Git inicializado
+- [x] Repositorio remoto criado
+- [x] Origin configurado
+- [x] Push inicial realizado
+- [ ] GitHub Actions executado com sucesso
+- [ ] Migracao aplicada no PostgreSQL de teste
+- [ ] Testes de integracao aprovados
+- [ ] Testes e2e aprovados
+- [ ] Teste concorrente aprovado
+
+A segunda entrega ainda nao esta integralmente concluida, pois depende da implementacao e execucao real dos testes PostgreSQL e do CI.

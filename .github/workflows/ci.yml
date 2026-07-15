@@ -12,6 +12,7 @@ jobs:
           --health-cmd "pg_isready -U postgres" --health-interval 10s --health-timeout 5s --health-retries 5
     env:
       DATABASE_URL: postgresql://postgres:postgres@localhost:5432/familia_feliz_test?schema=public
+      DATABASE_URL_TEST: postgresql://postgres:postgres@localhost:5432/familia_feliz_test?schema=public
       JWT_ACCESS_SECRET: change-this-to-a-ci-only-secret-32chars
       JWT_REFRESH_SECRET: change-this-to-another-ci-secret-32chars
     steps:
@@ -21,8 +22,10 @@ jobs:
       - run: corepack enable
       - run: pnpm install --frozen-lockfile
       - run: pnpm db:generate
-      - run: pnpm --filter @familia-feliz/api prisma:migrate -- --name ci-init
+      - run: pnpm exec prisma migrate deploy --schema apps/api/prisma/schema.prisma
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm test
+      - run: pnpm test:integration
+      - run: pnpm test:e2e
       - run: pnpm --filter @familia-feliz/api build
