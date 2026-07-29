@@ -1,0 +1,60 @@
+name: Deploy Visual Review Portal
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/visual-review/**"
+      - "docs/qa/visual/screenshots/**"
+      - "docs/qa/visual/visual-baselines.json"
+      - "docs/prototype-book/v1.0/thumbnails/**"
+      - "docs/release/visual-review/CAPTURE_INDEX.json"
+      - "docs/release/visual-review/approvals.json"
+      - "apps/visual-review/package.json"
+      - ".github/workflows/deploy-visual-review.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: visual-review-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --prefix apps/visual-review --no-audit --no-fund
+      - name: Validate portal
+        run: |
+          npm --prefix apps/visual-review test
+          npm --prefix apps/visual-review run typecheck
+      - name: Build static portal
+        env:
+          VISUAL_REVIEW_BASE_PATH: /ff/
+          VISUAL_REVIEW_VERSION: RC1.1C
+        run: npm --prefix apps/visual-review run build
+      - name: Verify static package
+        run: node apps/visual-review/scripts/verify-static.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/visual-review/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

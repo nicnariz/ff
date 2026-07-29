@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 1,
+  "baselineVersion": "1.0.0",
+  "generatedAt": "2026-07-29T11:51:41.455Z",
+  "policy": {
+    "requiredRoles": [
+      "QA",
+      "PRODUCT_OWNER"
+    ],
+    "promotionRequiresAllApproved": true,
+    "promotionIsManual": true
+  },
+  "reviewers": {
+    "qa": null,
+    "productOwner": null
+  },
+  "reviews": [
+    {
+      "key": "android-small-light/onboarding",
+      "captureHash": "fc8ae38574cf7e4e6d8313c958a281adcc892ccccf024e2fef9ee55234411886",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/onboarding",
+      "captureHash": "84941f2198a01a04b3151da605418d3cd666a2a9cba1e92d86a88487d04aac34",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/onboarding",
+      "captureHash": "ec0c7e8b7176113ee0b16b24107270beaac30d26c6f9be710fa9443dfee21ccd",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/onboarding",
+      "captureHash": "d2ca402f95ddb2c113359f2bf3f6b77863070a8209ea551360e1da1b40d18092",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/onboarding",
+      "captureHash": "411a4ca2c46afa8992102fd9418470e8449468c08a4e9302b07866755c037fc9",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/onboarding",
+      "captureHash": "6554152872473b7e4964dc12206f293ff28f6596471a717cdfe1653c74ff8b31",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/login",
+      "captureHash": "77984af1d2c6040e2ba88860d02612a93576d114f7bf511995ddda5e68698e73",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/login",
+      "captureHash": "f072e2b3eabb6273864a0217488a85b028348507f7efc05783d0afaae4f754f1",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/login",
+      "captureHash": "084638ad78b52d23c19474f5e16e757deaab0385200a42fea211f2ac4520c54a",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/login",
+      "captureHash": "75e8d7a8dc5e6b153b68f933ee711a1c82ef681b3b2fc99a2131a38d31baad51",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/login",
+      "captureHash": "96c8ba60d9dcb48fa90115f569bdeedca2a6193dbd30878b6caacbee13ca3dd0",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/login",
+      "captureHash": "d6d1151e5476596bffe4e21ebd01e73748ba1f5535d1b984043230eb4335164a",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/cadastro",
+      "captureHash": "545609e39c50e8de8c45c0076c8b5f253487e6906bb6e12936976f4058bd4756",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/cadastro",
+      "captureHash": "a7cb74ad6b3b303489817b35f6928017cdc5f1370e280f555a15f593b01fb480",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/cadastro",
+      "captureHash": "15503ff311204c0cdd0fcd482d8d911e70c708207d4de4f405b0117a508fb522",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/cadastro",
+      "captureHash": "d13c753f955fd566c112012dde371e10ab82e817741c9fa442573f589ed3188d",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/cadastro",
+      "captureHash": "7bdf734b2d94ee845ff66fe7b3c71d598634d3d189357777188167b189d05af7",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/cadastro",
+      "captureHash": "fd67e99ffc408d127681c86a9dcfe74c88e16953901ccd5b241b95c8e2c51aa4",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/recuperacao",
+      "captureHash": "79ea2139fa161f6dcdfd393d460d039f6057274558841392cf3cba6092f5fc88",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/recuperacao",
+      "captureHash": "2ce745a7c91ed94afeffd235f86c76f32bbfa9bc9acbf7ac6e592d5e04430f8b",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/recuperacao",
+      "captureHash": "0c44edab74cd54d8680cefed5fb8a2d26c6daa3feec350cfc1950263bd8ab246",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/recuperacao",
+      "captureHash": "25e6e99297a90953ef705fa13f5120fa13c99c6ea2c06ac90e172611b01cd124",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/recuperacao",
+      "captureHash": "ea32d386d78e351524f5188cc76dc2d6f0d0fe73840451527ff8086bd139f896",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/recuperacao",
+      "captureHash": "00b6aaddb31ea6e7a5cb2bd5f2b74f24ed8f046b43bb8935e7c67e30c88a67d0",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/familia-selecao",
+      "captureHash": "17426408c61fc0b113a4c817ebbe2da6fee9349296fcc51cdcb2753901a2bad8",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/familia-selecao",
+      "captureHash": "8a1661ce7c8793425c35c319b67d16bd9c37efaba09020dff668b701fdc3c68c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/familia-selecao",
+      "captureHash": "c4d62749b004a455c23a15107524163f0cecdca351660c5e0092a51c2f5e0df8",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/familia-selecao",
+      "captureHash": "8c0003947f461e52382a1d686e459eacf6995d8eb14eae2c35a9eae93a82eac1",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/familia-selecao",
+      "captureHash": "e2e8b281918bb65dd9768bac3e1311e243a0d8c90a067fa3b84ce40ec155db2d",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/familia-selecao",
+      "captureHash": "eb597dc17b3ebe4a496fd9101402c2db57420420675d321d51d500f0213b93ea",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/home",
+      "captureHash": "583a090a727e4400cbe43eac5a668e0253da00d4f6e2f9ce3fed993f82cc8b9c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/home",
+      "captureHash": "64fb880ba9b8e65dd8803cb84ae151595c923f9e4e6dd79f5153178fad67c63e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/home",
+      "captureHash": "c4d62749b004a455c23a15107524163f0cecdca351660c5e0092a51c2f5e0df8",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/home",
+      "captureHash": "fff5c216c08023a84615ce3f327fa62e1bc8d51acc98880401307e6a67df4b7c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/home",
+      "captureHash": "e2e8b281918bb65dd9768bac3e1311e243a0d8c90a067fa3b84ce40ec155db2d",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/home",
+      "captureHash": "82eb00686c5cf46223fcb6396a0c46fe8e8ad0728458cdfe1085e4d23f9d2243",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/membros",
+      "captureHash": "4448f5a6ac42a008bab4fde93ac69b3f3aa2fe4950f2beba42caf16a78b76f59",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/membros",
+      "captureHash": "53d2a35692718c85f70632f717e6393c2dc4c66cdadc2049339baed6d8f94eb3",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/membros",
+      "captureHash": "4dc63fe9dd1e3bb180338d45baaa7bffd8cbd6c155437d8dbbeef48e4d5d6210",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/membros",
+      "captureHash": "ac8b9f61a5d1fe647235b60ac47dce1f7554244bafc750e1337de929cd1947d0",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/membros",
+      "captureHash": "2e58d46757d952936847fcc82e5b43e6d4764f9d65839349164100467be7c4c2",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/membros",
+      "captureHash": "27ac02f5e96ae6d55498892acee3203f6ff9df3fcf00845aa6fb84d1172635dc",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/perfil",
+      "captureHash": "a50aade4363e5731388f9e496127cc5f29ab8017357a7edc9e322297e708ea67",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/perfil",
+      "captureHash": "0911700df6b48b490f6ec7be1c940ff623990d0659332340f8100a38ba916b64",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/perfil",
+      "captureHash": "8e8804243f7030f9662d531af505aa68c925af7e3cfa8f58002926db2244307c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/perfil",
+      "captureHash": "bbf156e8ab4092faf1e655f283fa8657a7b0b72d2536ccaefb6fcbc8fe8079b6",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/perfil",
+      "captureHash": "6021d3836d556d0b72ed9a92107fc8b3a9adbff8659ffb7d44a43b354d116060",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/perfil",
+      "captureHash": "e46cc711a2ae0b9a2735b319a54220d63de99fff045e2525da3e11fbfdbb9503",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/configuracoes",
+      "captureHash": "a8493c0d80d07ecb75cebbb5a7281fb2f126484ad4a768bdb9848a6839b130fd",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/configuracoes",
+      "captureHash": "3862218aa1a6080f2daa24519facbe250e2291218e8692778e6e9864a43f6261",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/configuracoes",
+      "captureHash": "337b2d6e0973be3b1c1d6b2cefb127a05ca3d1fbb7c4bd5da48e9ef53c0ac098",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/configuracoes",
+      "captureHash": "b51a1b731f820c458f0f0a708b71973b9c1d67564ef327903e76421f314462b5",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/configuracoes",
+      "captureHash": "274075616c1c14dae9c5bb72b91a07144e389482884f49fe67c0a467ff5b30d3",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/configuracoes",
+      "captureHash": "79c324e06c157f450c9fd696f8a2ebb6d388862ce13c3d784f390e0a7880f636",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/tarefas-lista",
+      "captureHash": "0f2ecbe69cbfa35e92a324667eb3f788df9bb64100431bc0d3205fd2be675024",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/tarefas-lista",
+      "captureHash": "68da4c3d2fc50f04227e1347ce554e428509628d73a68dec0853b749ff4664cc",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/tarefas-lista",
+      "captureHash": "55fb6a652ee0f23b6545b2aef69c7ef785dbffaae0961b4c583a8e3ed0ddf41c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/tarefas-lista",
+      "captureHash": "f86120c808143ceea45b5baab995e9ee160c812f54281316cadc60fb08398607",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/tarefas-lista",
+      "captureHash": "dbbde5194a5eef3363bf9bffc4e868606c060919d86141363823433e9434ec0b",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/tarefas-lista",
+      "captureHash": "a9c8f52236a4a075bb7a0348a65baf006340cae80160d78f8900000f742d8126",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/tarefa-criar",
+      "captureHash": "1d349d6a216941af71fe006e98acb644f88da12d05708974e30770a1af230e52",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/tarefa-criar",
+      "captureHash": "0e97b22ee42c98bf68bb35ca5053aef33f75a4be4a7b7b0e160e99c7e216b8a2",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/tarefa-criar",
+      "captureHash": "fb2f0b50bfbca272bccf2098dbf958abfb71d67dd1e724186b7ace978a83a98d",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/tarefa-criar",
+      "captureHash": "d095c81c86cfd7232a43942905ffea8d7c3e0e68792b3ec103080b87bbb6138d",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/tarefa-criar",
+      "captureHash": "6a41bda6b2d988084eb1acfd8e1865964a5e38fbafae827e3b2476c33f4dc4e7",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/tarefa-criar",
+      "captureHash": "0426774a8d5b7aa2dde3b2f02304f5c03b5d3ea4573f61b63a8a9752ee114407",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/tarefa-editar",
+      "captureHash": "261c074782419f3a0ea626ec30ce117a8d381dd1b2a505ec5f8cbe133c96ff41",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/tarefa-editar",
+      "captureHash": "57a320d5e364d069fb9c1e3dbc24a01a312409696d88726e4d61106d1400f9a2",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/tarefa-editar",
+      "captureHash": "9763da1c86fcb8fd7242cfcc1573e8a73d55199f1cd7043bd0103118e4af6f3b",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/tarefa-editar",
+      "captureHash": "49ec8edf2f491750b0e0f65806c853f43bec2f6503dc77ae0544c294cfecbbac",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/tarefa-editar",
+      "captureHash": "14d2de13b1b002cbab17c5e448388d109feb4d358d510db731dc2229705e2b98",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/tarefa-editar",
+      "captureHash": "bb237ccb6e1c35db9d96609de4542ee1b03faa856cd491a28ca514af40380214",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/tarefa-detalhe",
+      "captureHash": "98118884c0d3fdd5cf0a3cdde81c61698263317bbd1ce7e63a44acc6b10d1f0b",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/tarefa-detalhe",
+      "captureHash": "a55a199900c687e3782b1d5bce3afa5c83eb6cbb7634710d64bb8abcffe91177",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/tarefa-detalhe",
+      "captureHash": "5caff3dcaf22946db3eaef164c0617343232d66ca61fdb6c6e7952e1255e294f",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/tarefa-detalhe",
+      "captureHash": "2840f12112390d28b047a9ef73a1fe839f8f558d88ee8e19a4bbc6254e3749ce",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/tarefa-detalhe",
+      "captureHash": "187c16376af2441439f91980f798869dd828dc647d51a694b4d950df8f684374",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/tarefa-detalhe",
+      "captureHash": "efd9716ecd5c4adfe8a01f1e7e9229282f012dfa0e158593da90c5c0a8c4fb83",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/aprovacao",
+      "captureHash": "3b2284f2131afe35d04a9f8fe803bf83bf3efa40a37b42228b378ce10e715baa",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/aprovacao",
+      "captureHash": "ff17f5ac16bb43f0a5a8caa49a0f2a5339b5979d48b92630ad36902ce55428db",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/aprovacao",
+      "captureHash": "987694e85fd6973ee974a59c765ef9bc25cbd3ffa704df3f6171e85b2fdea3db",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/aprovacao",
+      "captureHash": "d94f06c6dafdbcee233b484b57a7983e2cfa3a5e29c5e38c440f0f0c7cf105d6",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/aprovacao",
+      "captureHash": "6428cc583e2c52f2201516f72ce82fc399a51c7653a2f4351b7a9e297f8315c4",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/aprovacao",
+      "captureHash": "1afc9c021dcff9638f14278c779502b86719d082de8981f01cef32119ce25622",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/pontuacao",
+      "captureHash": "4c0c290d950a26add15e87358186b73a61ad2cd54febde1da5b38dccbb5dfdd8",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/pontuacao",
+      "captureHash": "6a10df16ba0ae47a95ec28df20fa45c92e5f6e68d893f52c1ddc3b37c60bc19c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/pontuacao",
+      "captureHash": "6216dd15a37f394378631fb241840114e0c5afa5ef963b9b3e1a3eea65ea54ef",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/pontuacao",
+      "captureHash": "2e80564a0073a1bdc2e7be4e19789da8cc9d9c984608880d686f8ffabd549a96",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/pontuacao",
+      "captureHash": "62d3fbb25bdbc6e8c798791637e2076f6e53730678c3a4347fdcf96bf0c57701",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/pontuacao",
+      "captureHash": "5e040fee82d23113f29437922429baa42293aed4f581b69cc76f46cd7856e83f",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/historico",
+      "captureHash": "aa075b00a3ec61354551e071e14320a0550029f8881da9abbd126def534498ad",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/historico",
+      "captureHash": "7c9c993db63059dc210623834f9e433190df3d7b6cc8b638dd4ee98b9ccb47e6",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/historico",
+      "captureHash": "303f4319046388b2585e8624914910fac02ec378c0e561da9c613b9c3cbcb570",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/historico",
+      "captureHash": "4bab93ef56e8d5bc120c9187f05759f5a10821fad0b139e2fe581f4ed16c93dc",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/historico",
+      "captureHash": "05a19f300efb00cd52e91df0a51392f1abff6e9d8cf2878f3eaf613cd84beaa2",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/historico",
+      "captureHash": "4a238013e563c9882aa12870f0f4451734e8f0051c400dce3e21193df23d1671",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/mesadas",
+      "captureHash": "7e52c116ea385c726d2f1218385f15494a6afd7b799922d967134d84c4977410",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/mesadas",
+      "captureHash": "0e7b34d2ba0acaf98a8dab3c3bead976996576e640508b1ebc374a171bd7ce7d",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/mesadas",
+      "captureHash": "7730647b7ab39117f7a54f3f3180dc770ec60e9e838236313c03679eaecf6a08",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/mesadas",
+      "captureHash": "8ede638b811d43d76efd77f9f7eb0ada876813b28e5c7c6ef2886e177352ecff",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/mesadas",
+      "captureHash": "cc0600b2a585f461ebf005d61bb6b3e1f0f1edbb78dc3b2a75d489aef704989e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/mesadas",
+      "captureHash": "e27fe356ff4b881df6e2cb82a71a197142cf75e09dbc9ac832e440f05ca8e172",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/mesada-fechamento",
+      "captureHash": "cd4a0f9bf006f1deeaabf33ce83ae7387844f2c25eb483ef35347c3f999989f1",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/mesada-fechamento",
+      "captureHash": "3a428d31e5caabc35625d1c7eecf72dab5cff61c66059a088eff4e68f5423a59",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/mesada-fechamento",
+      "captureHash": "0e9c4c7d6f0f788f17ba8dd93339a31e38ddf1bd73a3d5efdcc6e787fc213d49",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/mesada-fechamento",
+      "captureHash": "2ec72c2496149b317315b4b17dbae66573eec9ee09cf7c343f7e2d2e105509fc",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/mesada-fechamento",
+      "captureHash": "e69fcb3fbf690e67be7bbaff9b15c93680d86e628f220c84a4dda75c887e743e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/mesada-fechamento",
+      "captureHash": "6668a26899ca7704db2f173a3518ec73a901388a08e05c02ea908a124c5708b7",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/carteira",
+      "captureHash": "7ac008aa7ae32910654b35ffb3b133109df0aa1b2dff3d97d392d267edb99250",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/carteira",
+      "captureHash": "6a83d286fd55584ee3f7074669de4014860ed25ae56a3f674ee1664f5cab31d5",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/carteira",
+      "captureHash": "de3807b95434c2b3d77cea9c9a21ad817886cdbe4ff5558950bb3824304cc16e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/carteira",
+      "captureHash": "3f60d49259901633cdffdf783932b4eab637cd57046d12a84a60e5fe9d22f857",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/carteira",
+      "captureHash": "e99ecc4a491ef26d583c567dbf799ee19f8f5c3e279056cde330ef5d737361e1",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/carteira",
+      "captureHash": "8b6dbabdd6bcfed2d59835b426260387d3871f6dfcce18bb34485e3c7974cdb3",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/recompensas",
+      "captureHash": "6cc9b3634b8b879f02ab6a7a99cbfd0010766fa9eb38f3c1fe37ac1fa48a0e4e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/recompensas",
+      "captureHash": "e663e7dea51d8592c532d86741c71a36310c27985c92b534a97e1b69b4d744fd",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/recompensas",
+      "captureHash": "00c85a78bbc2aed2130fdd67c66b5e3b59b08dd0d44f4e5ae4fc1559a77599aa",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/recompensas",
+      "captureHash": "e9167b6f5877b98152f9f4dfdf62860be4809db87cd3d8186ad37cc5ad45f35b",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/recompensas",
+      "captureHash": "7604cb4f7f4cf4ae8b8850759531885e3a6db378fb4dfb387fd0ee7a84c1e2f9",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/recompensas",
+      "captureHash": "6a9a7a67dd9f09bdd6d734239f71cfa12aeffca99d300fa28a10b8d0e8f74440",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/cofrinhos",
+      "captureHash": "136a9ba63d03eaa45277421736d678e6e5c6dc8b929058484129c5b952469d30",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/cofrinhos",
+      "captureHash": "d38cb4bb76418345af871ba2b7c53c340891542f34b5bd8843c4353d89bd9735",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/cofrinhos",
+      "captureHash": "6d627e7eaf4c85ae12b3e1ac448e907ae07f0a30b2d55fe3b80f6cbd9b89bf25",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/cofrinhos",
+      "captureHash": "4b8bf7291e44b5a84449319e468e11f53d2043fe6e29a81eb467a34f6eab7afb",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/cofrinhos",
+      "captureHash": "3d27de62c559973bc55037fb95f1d2380194a63d6c2ebf34f28e478e08739558",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/cofrinhos",
+      "captureHash": "3bb3d5f4f0cb426454252f239ab9606f70ff96cdd430c73d53398c989bfd4f88",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/missoes",
+      "captureHash": "2340f740aed113af684a88fb003feb53ce8c77d38b94c934cdde93dc003a7b90",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/missoes",
+      "captureHash": "4de309949f68184453a1e7bdcd140734c6565e7a3a224f65cfcdca0a7dc4ffa1",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/missoes",
+      "captureHash": "81962f93da55df41dbb675f3f361157ddb5f15bcdca1d3f4a88f992e81151bd3",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/missoes",
+      "captureHash": "d238e008b1017b78d61c4d07d5fc11e6ab48e2172642f1e9950172b37bbe5a0e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/missoes",
+      "captureHash": "51058c3ccb912aed1cf61f05188ec4147c5949a0adffa37d2654ae63d07ec1b9",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/missoes",
+      "captureHash": "bc1de06be2686e35079f5051727c9a1630fab593f456631cb7fb1004a396df8c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/conquistas",
+      "captureHash": "dc7a78df398fb6ce3305e3353181ba5ec387b29603c5ddc0ad6364af944d6d4d",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/conquistas",
+      "captureHash": "566f9023becfa19dcd31e494d35d31ba9d06ddd66935a1632b2e044e692e0106",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/conquistas",
+      "captureHash": "8ff12656b00a0d11771919666240e72d6269ac2177c36c2342d33354b032e4e1",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/conquistas",
+      "captureHash": "8a75c9de10a15ee622530655e88e0a5ab2dd8518a0a9daf2946abeb2c0cb3738",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/conquistas",
+      "captureHash": "21d30930f418d0609548a3de2bffa453053e90353c5d5965149a0d5f0c059a1b",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/conquistas",
+      "captureHash": "d4ab8285eef98d695448a913070ef3f495b6caec987b5a1b04d54fb032c0c40c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/timeline",
+      "captureHash": "562e2b29f05a7212ff43aeb1dfcccdde028bdf4bb2978901595a43dbd6ce0049",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/timeline",
+      "captureHash": "b567b17b370176cb18d2743f4f4c094ed7371f0640547cf0e72a8455e61067ce",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/timeline",
+      "captureHash": "d8ba0d97687f907153353134234526d5d58258ebfacb6db54925dc5996264257",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/timeline",
+      "captureHash": "56de6fdd0cb6ac578d0b8ca2055e084fcb5f996a9ce44615a42538a44a335d4e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/timeline",
+      "captureHash": "d5bc6223940f1a4dde67b9be5a70b67c15db78524e9b5d517f25a714e1705959",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/timeline",
+      "captureHash": "1a9bf716a3f9aec8714a8ee45eea281f9b9618c3181feebb63c95280dc7d0dce",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/calendario",
+      "captureHash": "0f2ecbe69cbfa35e92a324667eb3f788df9bb64100431bc0d3205fd2be675024",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/calendario",
+      "captureHash": "68da4c3d2fc50f04227e1347ce554e428509628d73a68dec0853b749ff4664cc",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/calendario",
+      "captureHash": "55fb6a652ee0f23b6545b2aef69c7ef785dbffaae0961b4c583a8e3ed0ddf41c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/calendario",
+      "captureHash": "f86120c808143ceea45b5baab995e9ee160c812f54281316cadc60fb08398607",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/calendario",
+      "captureHash": "dbbde5194a5eef3363bf9bffc4e868606c060919d86141363823433e9434ec0b",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/calendario",
+      "captureHash": "a9c8f52236a4a075bb7a0348a65baf006340cae80160d78f8900000f742d8126",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/notificacoes",
+      "captureHash": "c4a0ff666a21e1ca042063a82d4ed3e218040e38c6b6f078710c4af3a8c37a05",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/notificacoes",
+      "captureHash": "499271e0c7f4d6033ac84e24f74a700f10a5a0c6d79df80481e0a4ca50679460",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/notificacoes",
+      "captureHash": "9df54debbe49f78c4ffb9c7892a7d1e1cec2363a9db0da48e6a8779a987bc9b5",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/notificacoes",
+      "captureHash": "515f206e7672b9168d82b72e8a3e95167ab9c0afcb6be1f18492ee81a1179bc1",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/notificacoes",
+      "captureHash": "aac027ed4114e6cbbe452e68259ecdff473dc59e9eee59de74ff7cf231ff564c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/notificacoes",
+      "captureHash": "5ab59253f20e516fb778d8dff35133c2fa21b7a95ca21ef057f411bf803b4109",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/feedback",
+      "captureHash": "729f930f16238ff7f8ca9a22f699f384f657c8175b57b147ce52bd5d229b0b36",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/feedback",
+      "captureHash": "6a239afb3d49da5bcbb2116cb9f2771ef123ac7707d6c144d5b1e2f56c48a23c",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/feedback",
+      "captureHash": "1f988615868eea5517f7c0688a16ec7374e0b282078743f9ae20b4e29e1a50fc",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/feedback",
+      "captureHash": "50fb474db84ee633969211cb4e83a4026c088c20f59d0703cc30ad83e6b97523",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/feedback",
+      "captureHash": "b573e792cba8cb0da3b99f3ed9c7a123e3543e04f3b01031243be93bba4eec90",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/feedback",
+      "captureHash": "a73afddf5ab6e0debb4aa3cf47aae232a37ba55eb1e4459e479f3335d100ba75",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-small-light/sobre",
+      "captureHash": "8721e26ac477da2310f1efd94ee419459f9682510cb9842ee5f8e49d65306f7e",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "android-large-dark/sobre",
+      "captureHash": "4e08ed1085328a10207ad3a34906b4a98c330bcc4845caaa9fc44334f5955e27",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-light/sobre",
+      "captureHash": "89a582138ef694934b57057ee202a069c6d9b0d96cfe722092609275f2cc6a56",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "iphone-dark/sobre",
+      "captureHash": "cba8b186142535d60d3232670d8ca9b7c1b43bbe982bc7d9adf212eb04e06233",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "tablet-light/sobre",
+      "captureHash": "2762dda8ec2593e4597b451452a27f9c95195d889d7b9eed4e8bd69b8edb0f97",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    },
+    {
+      "key": "landscape-dark/sobre",
+      "captureHash": "9d46391a1c2d993f19f9ffb2fa7594bd150a6d7eb7cd123d67e39710f6eb0ad5",
+      "status": "PENDING",
+      "comment": "",
+      "qa": null,
+      "productOwner": null,
+      "reviewedAt": null
+    }
+  ]
+}

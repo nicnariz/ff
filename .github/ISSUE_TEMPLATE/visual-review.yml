@@ -1,0 +1,47 @@
+name: Visual review decision
+description: Registrar uma decisão autenticada sobre uma captura do RC1.
+title: "[Visual Review] "
+labels: ["visual-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este formulário somente para decisões do fluxo QA → Product Owner.
+        A promoção da baseline não é executada por este formulário.
+  - type: input
+    id: capture
+    attributes:
+      label: Capture key
+      placeholder: android-small-light/login
+    validations:
+      required: true
+  - type: input
+    id: hash
+    attributes:
+      label: SHA-256
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Reviewer role
+      options:
+        - QA
+        - Product Owner
+    validations:
+      required: true
+  - type: dropdown
+    id: decision
+    attributes:
+      label: Decision
+      options:
+        - APPROVED
+        - APPROVED_WITH_NOTES
+        - REJECTED
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment
+      description: Obrigatório para rejeição ou aprovação com notas.

@@ -1,0 +1,3720 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-29T11:51:41.455Z",
+  "searchRoots": [
+    "test-results",
+    "playwright-report",
+    "visual",
+    "artifacts",
+    "screenshots",
+    "qa",
+    "docs/qa/visual/screenshots"
+  ],
+  "selectionPolicy": "latest-mtime-per-screen-and-device",
+  "summary": {
+    "screens": 28,
+    "devices": 6,
+    "expected": 168,
+    "indexed": 168,
+    "valid": 168,
+    "invalid": 0
+  },
+  "captures": [
+    {
+      "key": "android-small-light/onboarding",
+      "screen": "onboarding",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/onboarding.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/02-onboarding.png",
+      "hash": "fc8ae38574cf7e4e6d8313c958a281adcc892ccccf024e2fef9ee55234411886",
+      "capturedAt": "2026-07-29T11:36:02.886Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/onboarding",
+      "screen": "onboarding",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/onboarding.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/02-onboarding.png",
+      "hash": "84941f2198a01a04b3151da605418d3cd666a2a9cba1e92d86a88487d04aac34",
+      "capturedAt": "2026-07-29T11:36:34.589Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/onboarding",
+      "screen": "onboarding",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/onboarding.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/02-onboarding.png",
+      "hash": "ec0c7e8b7176113ee0b16b24107270beaac30d26c6f9be710fa9443dfee21ccd",
+      "capturedAt": "2026-07-29T11:37:06.453Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/onboarding",
+      "screen": "onboarding",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/onboarding.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/02-onboarding.png",
+      "hash": "d2ca402f95ddb2c113359f2bf3f6b77863070a8209ea551360e1da1b40d18092",
+      "capturedAt": "2026-07-29T11:37:38.264Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/onboarding",
+      "screen": "onboarding",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/onboarding.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/02-onboarding.png",
+      "hash": "411a4ca2c46afa8992102fd9418470e8449468c08a4e9302b07866755c037fc9",
+      "capturedAt": "2026-07-29T11:38:10.027Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/onboarding",
+      "screen": "onboarding",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/onboarding.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/02-onboarding.png",
+      "hash": "6554152872473b7e4964dc12206f293ff28f6596471a717cdfe1653c74ff8b31",
+      "capturedAt": "2026-07-29T11:38:42.481Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/login",
+      "screen": "login",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/login.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/03-login.png",
+      "hash": "77984af1d2c6040e2ba88860d02612a93576d114f7bf511995ddda5e68698e73",
+      "capturedAt": "2026-07-29T11:36:04.018Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/login",
+      "screen": "login",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/login.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/03-login.png",
+      "hash": "f072e2b3eabb6273864a0217488a85b028348507f7efc05783d0afaae4f754f1",
+      "capturedAt": "2026-07-29T11:36:35.737Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/login",
+      "screen": "login",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/login.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/03-login.png",
+      "hash": "084638ad78b52d23c19474f5e16e757deaab0385200a42fea211f2ac4520c54a",
+      "capturedAt": "2026-07-29T11:37:07.617Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/login",
+      "screen": "login",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/login.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/03-login.png",
+      "hash": "75e8d7a8dc5e6b153b68f933ee711a1c82ef681b3b2fc99a2131a38d31baad51",
+      "capturedAt": "2026-07-29T11:37:39.416Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/login",
+      "screen": "login",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/login.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/03-login.png",
+      "hash": "96c8ba60d9dcb48fa90115f569bdeedca2a6193dbd30878b6caacbee13ca3dd0",
+      "capturedAt": "2026-07-29T11:38:11.199Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/login",
+      "screen": "login",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/login.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/03-login.png",
+      "hash": "d6d1151e5476596bffe4e21ebd01e73748ba1f5535d1b984043230eb4335164a",
+      "capturedAt": "2026-07-29T11:38:43.647Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/cadastro",
+      "screen": "cadastro",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/cadastro.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/04-cadastro.png",
+      "hash": "545609e39c50e8de8c45c0076c8b5f253487e6906bb6e12936976f4058bd4756",
+      "capturedAt": "2026-07-29T11:36:05.168Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/cadastro",
+      "screen": "cadastro",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/cadastro.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/04-cadastro.png",
+      "hash": "a7cb74ad6b3b303489817b35f6928017cdc5f1370e280f555a15f593b01fb480",
+      "capturedAt": "2026-07-29T11:36:36.905Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/cadastro",
+      "screen": "cadastro",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/cadastro.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/04-cadastro.png",
+      "hash": "15503ff311204c0cdd0fcd482d8d911e70c708207d4de4f405b0117a508fb522",
+      "capturedAt": "2026-07-29T11:37:08.785Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/cadastro",
+      "screen": "cadastro",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/cadastro.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/04-cadastro.png",
+      "hash": "d13c753f955fd566c112012dde371e10ab82e817741c9fa442573f589ed3188d",
+      "capturedAt": "2026-07-29T11:37:40.565Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/cadastro",
+      "screen": "cadastro",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/cadastro.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/04-cadastro.png",
+      "hash": "7bdf734b2d94ee845ff66fe7b3c71d598634d3d189357777188167b189d05af7",
+      "capturedAt": "2026-07-29T11:38:12.399Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/cadastro",
+      "screen": "cadastro",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/cadastro.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/04-cadastro.png",
+      "hash": "fd67e99ffc408d127681c86a9dcfe74c88e16953901ccd5b241b95c8e2c51aa4",
+      "capturedAt": "2026-07-29T11:38:44.797Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/recuperacao",
+      "screen": "recuperacao",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/recuperacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/05-recuperacao.png",
+      "hash": "79ea2139fa161f6dcdfd393d460d039f6057274558841392cf3cba6092f5fc88",
+      "capturedAt": "2026-07-29T11:36:06.268Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/recuperacao",
+      "screen": "recuperacao",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/recuperacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/05-recuperacao.png",
+      "hash": "2ce745a7c91ed94afeffd235f86c76f32bbfa9bc9acbf7ac6e592d5e04430f8b",
+      "capturedAt": "2026-07-29T11:36:38.018Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/recuperacao",
+      "screen": "recuperacao",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/recuperacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/05-recuperacao.png",
+      "hash": "0c44edab74cd54d8680cefed5fb8a2d26c6daa3feec350cfc1950263bd8ab246",
+      "capturedAt": "2026-07-29T11:37:09.881Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/recuperacao",
+      "screen": "recuperacao",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/recuperacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/05-recuperacao.png",
+      "hash": "25e6e99297a90953ef705fa13f5120fa13c99c6ea2c06ac90e172611b01cd124",
+      "capturedAt": "2026-07-29T11:37:41.682Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/recuperacao",
+      "screen": "recuperacao",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/recuperacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/05-recuperacao.png",
+      "hash": "ea32d386d78e351524f5188cc76dc2d6f0d0fe73840451527ff8086bd139f896",
+      "capturedAt": "2026-07-29T11:38:13.558Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/recuperacao",
+      "screen": "recuperacao",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/recuperacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/05-recuperacao.png",
+      "hash": "00b6aaddb31ea6e7a5cb2bd5f2b74f24ed8f046b43bb8935e7c67e30c88a67d0",
+      "capturedAt": "2026-07-29T11:38:45.947Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/familia-selecao",
+      "screen": "familia-selecao",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/familia-selecao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/06-familia-selecao.png",
+      "hash": "17426408c61fc0b113a4c817ebbe2da6fee9349296fcc51cdcb2753901a2bad8",
+      "capturedAt": "2026-07-29T11:36:07.468Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/familia-selecao",
+      "screen": "familia-selecao",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/familia-selecao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/06-familia-selecao.png",
+      "hash": "8a1661ce7c8793425c35c319b67d16bd9c37efaba09020dff668b701fdc3c68c",
+      "capturedAt": "2026-07-29T11:36:39.222Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/familia-selecao",
+      "screen": "familia-selecao",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/familia-selecao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/06-familia-selecao.png",
+      "hash": "c4d62749b004a455c23a15107524163f0cecdca351660c5e0092a51c2f5e0df8",
+      "capturedAt": "2026-07-29T11:37:11.101Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/familia-selecao",
+      "screen": "familia-selecao",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/familia-selecao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/06-familia-selecao.png",
+      "hash": "8c0003947f461e52382a1d686e459eacf6995d8eb14eae2c35a9eae93a82eac1",
+      "capturedAt": "2026-07-29T11:37:42.851Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/familia-selecao",
+      "screen": "familia-selecao",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/familia-selecao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/06-familia-selecao.png",
+      "hash": "e2e8b281918bb65dd9768bac3e1311e243a0d8c90a067fa3b84ce40ec155db2d",
+      "capturedAt": "2026-07-29T11:38:14.765Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/familia-selecao",
+      "screen": "familia-selecao",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/familia-selecao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/06-familia-selecao.png",
+      "hash": "eb597dc17b3ebe4a496fd9101402c2db57420420675d321d51d500f0213b93ea",
+      "capturedAt": "2026-07-29T11:38:47.146Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/home",
+      "screen": "home",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/home.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/07-home.png",
+      "hash": "583a090a727e4400cbe43eac5a668e0253da00d4f6e2f9ce3fed993f82cc8b9c",
+      "capturedAt": "2026-07-29T11:36:08.654Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/home",
+      "screen": "home",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/home.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/07-home.png",
+      "hash": "64fb880ba9b8e65dd8803cb84ae151595c923f9e4e6dd79f5153178fad67c63e",
+      "capturedAt": "2026-07-29T11:36:40.391Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/home",
+      "screen": "home",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/home.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/07-home.png",
+      "hash": "c4d62749b004a455c23a15107524163f0cecdca351660c5e0092a51c2f5e0df8",
+      "capturedAt": "2026-07-29T11:37:12.270Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/home",
+      "screen": "home",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/home.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/07-home.png",
+      "hash": "fff5c216c08023a84615ce3f327fa62e1bc8d51acc98880401307e6a67df4b7c",
+      "capturedAt": "2026-07-29T11:37:44.035Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/home",
+      "screen": "home",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/home.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/07-home.png",
+      "hash": "e2e8b281918bb65dd9768bac3e1311e243a0d8c90a067fa3b84ce40ec155db2d",
+      "capturedAt": "2026-07-29T11:38:15.963Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/home",
+      "screen": "home",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/home.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/07-home.png",
+      "hash": "82eb00686c5cf46223fcb6396a0c46fe8e8ad0728458cdfe1085e4d23f9d2243",
+      "capturedAt": "2026-07-29T11:38:48.313Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/membros",
+      "screen": "membros",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/membros.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/08-membros.png",
+      "hash": "4448f5a6ac42a008bab4fde93ac69b3f3aa2fe4950f2beba42caf16a78b76f59",
+      "capturedAt": "2026-07-29T11:36:09.749Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/membros",
+      "screen": "membros",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/membros.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/08-membros.png",
+      "hash": "53d2a35692718c85f70632f717e6393c2dc4c66cdadc2049339baed6d8f94eb3",
+      "capturedAt": "2026-07-29T11:36:41.506Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/membros",
+      "screen": "membros",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/membros.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/08-membros.png",
+      "hash": "4dc63fe9dd1e3bb180338d45baaa7bffd8cbd6c155437d8dbbeef48e4d5d6210",
+      "capturedAt": "2026-07-29T11:37:13.364Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/membros",
+      "screen": "membros",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/membros.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/08-membros.png",
+      "hash": "ac8b9f61a5d1fe647235b60ac47dce1f7554244bafc750e1337de929cd1947d0",
+      "capturedAt": "2026-07-29T11:37:45.130Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/membros",
+      "screen": "membros",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/membros.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/08-membros.png",
+      "hash": "2e58d46757d952936847fcc82e5b43e6d4764f9d65839349164100467be7c4c2",
+      "capturedAt": "2026-07-29T11:38:17.091Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/membros",
+      "screen": "membros",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/membros.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/08-membros.png",
+      "hash": "27ac02f5e96ae6d55498892acee3203f6ff9df3fcf00845aa6fb84d1172635dc",
+      "capturedAt": "2026-07-29T11:38:49.429Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/perfil",
+      "screen": "perfil",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/perfil.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/09-perfil.png",
+      "hash": "a50aade4363e5731388f9e496127cc5f29ab8017357a7edc9e322297e708ea67",
+      "capturedAt": "2026-07-29T11:36:10.921Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/perfil",
+      "screen": "perfil",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/perfil.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/09-perfil.png",
+      "hash": "0911700df6b48b490f6ec7be1c940ff623990d0659332340f8100a38ba916b64",
+      "capturedAt": "2026-07-29T11:36:42.669Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/perfil",
+      "screen": "perfil",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/perfil.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/09-perfil.png",
+      "hash": "8e8804243f7030f9662d531af505aa68c925af7e3cfa8f58002926db2244307c",
+      "capturedAt": "2026-07-29T11:37:14.532Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/perfil",
+      "screen": "perfil",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/perfil.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/09-perfil.png",
+      "hash": "bbf156e8ab4092faf1e655f283fa8657a7b0b72d2536ccaefb6fcbc8fe8079b6",
+      "capturedAt": "2026-07-29T11:37:46.280Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/perfil",
+      "screen": "perfil",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/perfil.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/09-perfil.png",
+      "hash": "6021d3836d556d0b72ed9a92107fc8b3a9adbff8659ffb7d44a43b354d116060",
+      "capturedAt": "2026-07-29T11:38:18.257Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/perfil",
+      "screen": "perfil",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/perfil.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/09-perfil.png",
+      "hash": "e46cc711a2ae0b9a2735b319a54220d63de99fff045e2525da3e11fbfdbb9503",
+      "capturedAt": "2026-07-29T11:38:50.577Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/configuracoes",
+      "screen": "configuracoes",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/configuracoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/10-configuracoes.png",
+      "hash": "a8493c0d80d07ecb75cebbb5a7281fb2f126484ad4a768bdb9848a6839b130fd",
+      "capturedAt": "2026-07-29T11:36:12.037Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/configuracoes",
+      "screen": "configuracoes",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/configuracoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/10-configuracoes.png",
+      "hash": "3862218aa1a6080f2daa24519facbe250e2291218e8692778e6e9864a43f6261",
+      "capturedAt": "2026-07-29T11:36:43.789Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/configuracoes",
+      "screen": "configuracoes",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/configuracoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/10-configuracoes.png",
+      "hash": "337b2d6e0973be3b1c1d6b2cefb127a05ca3d1fbb7c4bd5da48e9ef53c0ac098",
+      "capturedAt": "2026-07-29T11:37:15.635Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/configuracoes",
+      "screen": "configuracoes",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/configuracoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/10-configuracoes.png",
+      "hash": "b51a1b731f820c458f0f0a708b71973b9c1d67564ef327903e76421f314462b5",
+      "capturedAt": "2026-07-29T11:37:47.401Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/configuracoes",
+      "screen": "configuracoes",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/configuracoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/10-configuracoes.png",
+      "hash": "274075616c1c14dae9c5bb72b91a07144e389482884f49fe67c0a467ff5b30d3",
+      "capturedAt": "2026-07-29T11:38:19.447Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/configuracoes",
+      "screen": "configuracoes",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/configuracoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/10-configuracoes.png",
+      "hash": "79c324e06c157f450c9fd696f8a2ebb6d388862ce13c3d784f390e0a7880f636",
+      "capturedAt": "2026-07-29T11:38:51.678Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/tarefas-lista",
+      "screen": "tarefas-lista",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/tarefas-lista.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/11-tarefas-lista.png",
+      "hash": "0f2ecbe69cbfa35e92a324667eb3f788df9bb64100431bc0d3205fd2be675024",
+      "capturedAt": "2026-07-29T11:36:13.099Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/tarefas-lista",
+      "screen": "tarefas-lista",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/tarefas-lista.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/11-tarefas-lista.png",
+      "hash": "68da4c3d2fc50f04227e1347ce554e428509628d73a68dec0853b749ff4664cc",
+      "capturedAt": "2026-07-29T11:36:44.903Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/tarefas-lista",
+      "screen": "tarefas-lista",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/tarefas-lista.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/11-tarefas-lista.png",
+      "hash": "55fb6a652ee0f23b6545b2aef69c7ef785dbffaae0961b4c583a8e3ed0ddf41c",
+      "capturedAt": "2026-07-29T11:37:16.713Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/tarefas-lista",
+      "screen": "tarefas-lista",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/tarefas-lista.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/11-tarefas-lista.png",
+      "hash": "f86120c808143ceea45b5baab995e9ee160c812f54281316cadc60fb08398607",
+      "capturedAt": "2026-07-29T11:37:48.494Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/tarefas-lista",
+      "screen": "tarefas-lista",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/tarefas-lista.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/11-tarefas-lista.png",
+      "hash": "dbbde5194a5eef3363bf9bffc4e868606c060919d86141363823433e9434ec0b",
+      "capturedAt": "2026-07-29T11:38:20.554Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/tarefas-lista",
+      "screen": "tarefas-lista",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/tarefas-lista.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/11-tarefas-lista.png",
+      "hash": "a9c8f52236a4a075bb7a0348a65baf006340cae80160d78f8900000f742d8126",
+      "capturedAt": "2026-07-29T11:38:52.792Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/tarefa-criar",
+      "screen": "tarefa-criar",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/tarefa-criar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/12-tarefa-criar.png",
+      "hash": "1d349d6a216941af71fe006e98acb644f88da12d05708974e30770a1af230e52",
+      "capturedAt": "2026-07-29T11:36:14.264Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/tarefa-criar",
+      "screen": "tarefa-criar",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/tarefa-criar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/12-tarefa-criar.png",
+      "hash": "0e97b22ee42c98bf68bb35ca5053aef33f75a4be4a7b7b0e160e99c7e216b8a2",
+      "capturedAt": "2026-07-29T11:36:46.036Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/tarefa-criar",
+      "screen": "tarefa-criar",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/tarefa-criar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/12-tarefa-criar.png",
+      "hash": "fb2f0b50bfbca272bccf2098dbf958abfb71d67dd1e724186b7ace978a83a98d",
+      "capturedAt": "2026-07-29T11:37:17.818Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/tarefa-criar",
+      "screen": "tarefa-criar",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/tarefa-criar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/12-tarefa-criar.png",
+      "hash": "d095c81c86cfd7232a43942905ffea8d7c3e0e68792b3ec103080b87bbb6138d",
+      "capturedAt": "2026-07-29T11:37:49.646Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/tarefa-criar",
+      "screen": "tarefa-criar",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/tarefa-criar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/12-tarefa-criar.png",
+      "hash": "6a41bda6b2d988084eb1acfd8e1865964a5e38fbafae827e3b2476c33f4dc4e7",
+      "capturedAt": "2026-07-29T11:38:21.691Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/tarefa-criar",
+      "screen": "tarefa-criar",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/tarefa-criar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/12-tarefa-criar.png",
+      "hash": "0426774a8d5b7aa2dde3b2f02304f5c03b5d3ea4573f61b63a8a9752ee114407",
+      "capturedAt": "2026-07-29T11:38:53.893Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/tarefa-editar",
+      "screen": "tarefa-editar",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/tarefa-editar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/13-tarefa-editar.png",
+      "hash": "261c074782419f3a0ea626ec30ce117a8d381dd1b2a505ec5f8cbe133c96ff41",
+      "capturedAt": "2026-07-29T11:36:15.367Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/tarefa-editar",
+      "screen": "tarefa-editar",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/tarefa-editar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/13-tarefa-editar.png",
+      "hash": "57a320d5e364d069fb9c1e3dbc24a01a312409696d88726e4d61106d1400f9a2",
+      "capturedAt": "2026-07-29T11:36:47.148Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/tarefa-editar",
+      "screen": "tarefa-editar",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/tarefa-editar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/13-tarefa-editar.png",
+      "hash": "9763da1c86fcb8fd7242cfcc1573e8a73d55199f1cd7043bd0103118e4af6f3b",
+      "capturedAt": "2026-07-29T11:37:18.918Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/tarefa-editar",
+      "screen": "tarefa-editar",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/tarefa-editar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/13-tarefa-editar.png",
+      "hash": "49ec8edf2f491750b0e0f65806c853f43bec2f6503dc77ae0544c294cfecbbac",
+      "capturedAt": "2026-07-29T11:37:50.722Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/tarefa-editar",
+      "screen": "tarefa-editar",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/tarefa-editar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/13-tarefa-editar.png",
+      "hash": "14d2de13b1b002cbab17c5e448388d109feb4d358d510db731dc2229705e2b98",
+      "capturedAt": "2026-07-29T11:38:22.806Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/tarefa-editar",
+      "screen": "tarefa-editar",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/tarefa-editar.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/13-tarefa-editar.png",
+      "hash": "bb237ccb6e1c35db9d96609de4542ee1b03faa856cd491a28ca514af40380214",
+      "capturedAt": "2026-07-29T11:38:55.026Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/tarefa-detalhe",
+      "screen": "tarefa-detalhe",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/tarefa-detalhe.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/14-tarefa-detalhe.png",
+      "hash": "98118884c0d3fdd5cf0a3cdde81c61698263317bbd1ce7e63a44acc6b10d1f0b",
+      "capturedAt": "2026-07-29T11:36:16.518Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/tarefa-detalhe",
+      "screen": "tarefa-detalhe",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/tarefa-detalhe.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/14-tarefa-detalhe.png",
+      "hash": "a55a199900c687e3782b1d5bce3afa5c83eb6cbb7634710d64bb8abcffe91177",
+      "capturedAt": "2026-07-29T11:36:48.321Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/tarefa-detalhe",
+      "screen": "tarefa-detalhe",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/tarefa-detalhe.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/14-tarefa-detalhe.png",
+      "hash": "5caff3dcaf22946db3eaef164c0617343232d66ca61fdb6c6e7952e1255e294f",
+      "capturedAt": "2026-07-29T11:37:20.067Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/tarefa-detalhe",
+      "screen": "tarefa-detalhe",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/tarefa-detalhe.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/14-tarefa-detalhe.png",
+      "hash": "2840f12112390d28b047a9ef73a1fe839f8f558d88ee8e19a4bbc6254e3749ce",
+      "capturedAt": "2026-07-29T11:37:51.880Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/tarefa-detalhe",
+      "screen": "tarefa-detalhe",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/tarefa-detalhe.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/14-tarefa-detalhe.png",
+      "hash": "187c16376af2441439f91980f798869dd828dc647d51a694b4d950df8f684374",
+      "capturedAt": "2026-07-29T11:38:23.999Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/tarefa-detalhe",
+      "screen": "tarefa-detalhe",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/tarefa-detalhe.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/14-tarefa-detalhe.png",
+      "hash": "efd9716ecd5c4adfe8a01f1e7e9229282f012dfa0e158593da90c5c0a8c4fb83",
+      "capturedAt": "2026-07-29T11:38:56.160Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/aprovacao",
+      "screen": "aprovacao",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/aprovacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/15-aprovacao.png",
+      "hash": "3b2284f2131afe35d04a9f8fe803bf83bf3efa40a37b42228b378ce10e715baa",
+      "capturedAt": "2026-07-29T11:36:17.653Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/aprovacao",
+      "screen": "aprovacao",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/aprovacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/15-aprovacao.png",
+      "hash": "ff17f5ac16bb43f0a5a8caa49a0f2a5339b5979d48b92630ad36902ce55428db",
+      "capturedAt": "2026-07-29T11:36:49.502Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/aprovacao",
+      "screen": "aprovacao",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/aprovacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/15-aprovacao.png",
+      "hash": "987694e85fd6973ee974a59c765ef9bc25cbd3ffa704df3f6171e85b2fdea3db",
+      "capturedAt": "2026-07-29T11:37:21.267Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/aprovacao",
+      "screen": "aprovacao",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/aprovacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/15-aprovacao.png",
+      "hash": "d94f06c6dafdbcee233b484b57a7983e2cfa3a5e29c5e38c440f0f0c7cf105d6",
+      "capturedAt": "2026-07-29T11:37:53.082Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/aprovacao",
+      "screen": "aprovacao",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/aprovacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/15-aprovacao.png",
+      "hash": "6428cc583e2c52f2201516f72ce82fc399a51c7653a2f4351b7a9e297f8315c4",
+      "capturedAt": "2026-07-29T11:38:25.226Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/aprovacao",
+      "screen": "aprovacao",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/aprovacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/15-aprovacao.png",
+      "hash": "1afc9c021dcff9638f14278c779502b86719d082de8981f01cef32119ce25622",
+      "capturedAt": "2026-07-29T11:38:57.381Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/pontuacao",
+      "screen": "pontuacao",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/pontuacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/16-pontuacao.png",
+      "hash": "4c0c290d950a26add15e87358186b73a61ad2cd54febde1da5b38dccbb5dfdd8",
+      "capturedAt": "2026-07-29T11:36:18.781Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/pontuacao",
+      "screen": "pontuacao",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/pontuacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/16-pontuacao.png",
+      "hash": "6a10df16ba0ae47a95ec28df20fa45c92e5f6e68d893f52c1ddc3b37c60bc19c",
+      "capturedAt": "2026-07-29T11:36:50.615Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/pontuacao",
+      "screen": "pontuacao",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/pontuacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/16-pontuacao.png",
+      "hash": "6216dd15a37f394378631fb241840114e0c5afa5ef963b9b3e1a3eea65ea54ef",
+      "capturedAt": "2026-07-29T11:37:22.364Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/pontuacao",
+      "screen": "pontuacao",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/pontuacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/16-pontuacao.png",
+      "hash": "2e80564a0073a1bdc2e7be4e19789da8cc9d9c984608880d686f8ffabd549a96",
+      "capturedAt": "2026-07-29T11:37:54.178Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/pontuacao",
+      "screen": "pontuacao",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/pontuacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/16-pontuacao.png",
+      "hash": "62d3fbb25bdbc6e8c798791637e2076f6e53730678c3a4347fdcf96bf0c57701",
+      "capturedAt": "2026-07-29T11:38:26.340Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/pontuacao",
+      "screen": "pontuacao",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/pontuacao.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/16-pontuacao.png",
+      "hash": "5e040fee82d23113f29437922429baa42293aed4f581b69cc76f46cd7856e83f",
+      "capturedAt": "2026-07-29T11:38:58.460Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/historico",
+      "screen": "historico",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/historico.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/17-historico.png",
+      "hash": "aa075b00a3ec61354551e071e14320a0550029f8881da9abbd126def534498ad",
+      "capturedAt": "2026-07-29T11:36:19.833Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/historico",
+      "screen": "historico",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/historico.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/17-historico.png",
+      "hash": "7c9c993db63059dc210623834f9e433190df3d7b6cc8b638dd4ee98b9ccb47e6",
+      "capturedAt": "2026-07-29T11:36:51.704Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/historico",
+      "screen": "historico",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/historico.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/17-historico.png",
+      "hash": "303f4319046388b2585e8624914910fac02ec378c0e561da9c613b9c3cbcb570",
+      "capturedAt": "2026-07-29T11:37:23.462Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/historico",
+      "screen": "historico",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/historico.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/17-historico.png",
+      "hash": "4bab93ef56e8d5bc120c9187f05759f5a10821fad0b139e2fe581f4ed16c93dc",
+      "capturedAt": "2026-07-29T11:37:55.293Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/historico",
+      "screen": "historico",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/historico.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/17-historico.png",
+      "hash": "05a19f300efb00cd52e91df0a51392f1abff6e9d8cf2878f3eaf613cd84beaa2",
+      "capturedAt": "2026-07-29T11:38:27.420Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/historico",
+      "screen": "historico",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/historico.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/17-historico.png",
+      "hash": "4a238013e563c9882aa12870f0f4451734e8f0051c400dce3e21193df23d1671",
+      "capturedAt": "2026-07-29T11:38:59.545Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/mesadas",
+      "screen": "mesadas",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/mesadas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/18-mesadas.png",
+      "hash": "7e52c116ea385c726d2f1218385f15494a6afd7b799922d967134d84c4977410",
+      "capturedAt": "2026-07-29T11:36:20.933Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/mesadas",
+      "screen": "mesadas",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/mesadas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/18-mesadas.png",
+      "hash": "0e7b34d2ba0acaf98a8dab3c3bead976996576e640508b1ebc374a171bd7ce7d",
+      "capturedAt": "2026-07-29T11:36:52.796Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/mesadas",
+      "screen": "mesadas",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/mesadas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/18-mesadas.png",
+      "hash": "7730647b7ab39117f7a54f3f3180dc770ec60e9e838236313c03679eaecf6a08",
+      "capturedAt": "2026-07-29T11:37:24.594Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/mesadas",
+      "screen": "mesadas",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/mesadas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/18-mesadas.png",
+      "hash": "8ede638b811d43d76efd77f9f7eb0ada876813b28e5c7c6ef2886e177352ecff",
+      "capturedAt": "2026-07-29T11:37:56.395Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/mesadas",
+      "screen": "mesadas",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/mesadas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/18-mesadas.png",
+      "hash": "cc0600b2a585f461ebf005d61bb6b3e1f0f1edbb78dc3b2a75d489aef704989e",
+      "capturedAt": "2026-07-29T11:38:28.535Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/mesadas",
+      "screen": "mesadas",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/mesadas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/18-mesadas.png",
+      "hash": "e27fe356ff4b881df6e2cb82a71a197142cf75e09dbc9ac832e440f05ca8e172",
+      "capturedAt": "2026-07-29T11:39:00.679Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/mesada-fechamento",
+      "screen": "mesada-fechamento",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/mesada-fechamento.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/19-mesada-fechamento.png",
+      "hash": "cd4a0f9bf006f1deeaabf33ce83ae7387844f2c25eb483ef35347c3f999989f1",
+      "capturedAt": "2026-07-29T11:36:21.981Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/mesada-fechamento",
+      "screen": "mesada-fechamento",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/mesada-fechamento.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/19-mesada-fechamento.png",
+      "hash": "3a428d31e5caabc35625d1c7eecf72dab5cff61c66059a088eff4e68f5423a59",
+      "capturedAt": "2026-07-29T11:36:53.849Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/mesada-fechamento",
+      "screen": "mesada-fechamento",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/mesada-fechamento.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/19-mesada-fechamento.png",
+      "hash": "0e9c4c7d6f0f788f17ba8dd93339a31e38ddf1bd73a3d5efdcc6e787fc213d49",
+      "capturedAt": "2026-07-29T11:37:25.650Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/mesada-fechamento",
+      "screen": "mesada-fechamento",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/mesada-fechamento.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/19-mesada-fechamento.png",
+      "hash": "2ec72c2496149b317315b4b17dbae66573eec9ee09cf7c343f7e2d2e105509fc",
+      "capturedAt": "2026-07-29T11:37:57.448Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/mesada-fechamento",
+      "screen": "mesada-fechamento",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/mesada-fechamento.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/19-mesada-fechamento.png",
+      "hash": "e69fcb3fbf690e67be7bbaff9b15c93680d86e628f220c84a4dda75c887e743e",
+      "capturedAt": "2026-07-29T11:38:29.669Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/mesada-fechamento",
+      "screen": "mesada-fechamento",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/mesada-fechamento.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/19-mesada-fechamento.png",
+      "hash": "6668a26899ca7704db2f173a3518ec73a901388a08e05c02ea908a124c5708b7",
+      "capturedAt": "2026-07-29T11:39:01.747Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/carteira",
+      "screen": "carteira",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/carteira.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/20-carteira.png",
+      "hash": "7ac008aa7ae32910654b35ffb3b133109df0aa1b2dff3d97d392d267edb99250",
+      "capturedAt": "2026-07-29T11:36:23.138Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/carteira",
+      "screen": "carteira",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/carteira.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/20-carteira.png",
+      "hash": "6a83d286fd55584ee3f7074669de4014860ed25ae56a3f674ee1664f5cab31d5",
+      "capturedAt": "2026-07-29T11:36:55.056Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/carteira",
+      "screen": "carteira",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/carteira.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/20-carteira.png",
+      "hash": "de3807b95434c2b3d77cea9c9a21ad817886cdbe4ff5558950bb3824304cc16e",
+      "capturedAt": "2026-07-29T11:37:26.848Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/carteira",
+      "screen": "carteira",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/carteira.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/20-carteira.png",
+      "hash": "3f60d49259901633cdffdf783932b4eab637cd57046d12a84a60e5fe9d22f857",
+      "capturedAt": "2026-07-29T11:37:58.662Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/carteira",
+      "screen": "carteira",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/carteira.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/20-carteira.png",
+      "hash": "e99ecc4a491ef26d583c567dbf799ee19f8f5c3e279056cde330ef5d737361e1",
+      "capturedAt": "2026-07-29T11:38:30.855Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/carteira",
+      "screen": "carteira",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/carteira.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/20-carteira.png",
+      "hash": "8b6dbabdd6bcfed2d59835b426260387d3871f6dfcce18bb34485e3c7974cdb3",
+      "capturedAt": "2026-07-29T11:39:02.948Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/recompensas",
+      "screen": "recompensas",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/recompensas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/21-recompensas.png",
+      "hash": "6cc9b3634b8b879f02ab6a7a99cbfd0010766fa9eb38f3c1fe37ac1fa48a0e4e",
+      "capturedAt": "2026-07-29T11:36:24.285Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/recompensas",
+      "screen": "recompensas",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/recompensas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/21-recompensas.png",
+      "hash": "e663e7dea51d8592c532d86741c71a36310c27985c92b534a97e1b69b4d744fd",
+      "capturedAt": "2026-07-29T11:36:56.189Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/recompensas",
+      "screen": "recompensas",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/recompensas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/21-recompensas.png",
+      "hash": "00c85a78bbc2aed2130fdd67c66b5e3b59b08dd0d44f4e5ae4fc1559a77599aa",
+      "capturedAt": "2026-07-29T11:37:27.986Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/recompensas",
+      "screen": "recompensas",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/recompensas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/21-recompensas.png",
+      "hash": "e9167b6f5877b98152f9f4dfdf62860be4809db87cd3d8186ad37cc5ad45f35b",
+      "capturedAt": "2026-07-29T11:37:59.782Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/recompensas",
+      "screen": "recompensas",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/recompensas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/21-recompensas.png",
+      "hash": "7604cb4f7f4cf4ae8b8850759531885e3a6db378fb4dfb387fd0ee7a84c1e2f9",
+      "capturedAt": "2026-07-29T11:38:32.033Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/recompensas",
+      "screen": "recompensas",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/recompensas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/21-recompensas.png",
+      "hash": "6a9a7a67dd9f09bdd6d734239f71cfa12aeffca99d300fa28a10b8d0e8f74440",
+      "capturedAt": "2026-07-29T11:39:04.095Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/cofrinhos",
+      "screen": "cofrinhos",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/cofrinhos.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/22-cofrinhos.png",
+      "hash": "136a9ba63d03eaa45277421736d678e6e5c6dc8b929058484129c5b952469d30",
+      "capturedAt": "2026-07-29T11:36:25.433Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/cofrinhos",
+      "screen": "cofrinhos",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/cofrinhos.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/22-cofrinhos.png",
+      "hash": "d38cb4bb76418345af871ba2b7c53c340891542f34b5bd8843c4353d89bd9735",
+      "capturedAt": "2026-07-29T11:36:57.367Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/cofrinhos",
+      "screen": "cofrinhos",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/cofrinhos.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/22-cofrinhos.png",
+      "hash": "6d627e7eaf4c85ae12b3e1ac448e907ae07f0a30b2d55fe3b80f6cbd9b89bf25",
+      "capturedAt": "2026-07-29T11:37:29.130Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/cofrinhos",
+      "screen": "cofrinhos",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/cofrinhos.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/22-cofrinhos.png",
+      "hash": "4b8bf7291e44b5a84449319e468e11f53d2043fe6e29a81eb467a34f6eab7afb",
+      "capturedAt": "2026-07-29T11:38:00.913Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/cofrinhos",
+      "screen": "cofrinhos",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/cofrinhos.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/22-cofrinhos.png",
+      "hash": "3d27de62c559973bc55037fb95f1d2380194a63d6c2ebf34f28e478e08739558",
+      "capturedAt": "2026-07-29T11:38:33.223Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/cofrinhos",
+      "screen": "cofrinhos",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/cofrinhos.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/22-cofrinhos.png",
+      "hash": "3bb3d5f4f0cb426454252f239ab9606f70ff96cdd430c73d53398c989bfd4f88",
+      "capturedAt": "2026-07-29T11:39:05.230Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/missoes",
+      "screen": "missoes",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/missoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/23-missoes.png",
+      "hash": "2340f740aed113af684a88fb003feb53ce8c77d38b94c934cdde93dc003a7b90",
+      "capturedAt": "2026-07-29T11:36:26.619Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/missoes",
+      "screen": "missoes",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/missoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/23-missoes.png",
+      "hash": "4de309949f68184453a1e7bdcd140734c6565e7a3a224f65cfcdca0a7dc4ffa1",
+      "capturedAt": "2026-07-29T11:36:58.539Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/missoes",
+      "screen": "missoes",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/missoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/23-missoes.png",
+      "hash": "81962f93da55df41dbb675f3f361157ddb5f15bcdca1d3f4a88f992e81151bd3",
+      "capturedAt": "2026-07-29T11:37:30.318Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/missoes",
+      "screen": "missoes",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/missoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/23-missoes.png",
+      "hash": "d238e008b1017b78d61c4d07d5fc11e6ab48e2172642f1e9950172b37bbe5a0e",
+      "capturedAt": "2026-07-29T11:38:02.083Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/missoes",
+      "screen": "missoes",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/missoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/23-missoes.png",
+      "hash": "51058c3ccb912aed1cf61f05188ec4147c5949a0adffa37d2654ae63d07ec1b9",
+      "capturedAt": "2026-07-29T11:38:34.449Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/missoes",
+      "screen": "missoes",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/missoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/23-missoes.png",
+      "hash": "bc1de06be2686e35079f5051727c9a1630fab593f456631cb7fb1004a396df8c",
+      "capturedAt": "2026-07-29T11:39:06.397Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/conquistas",
+      "screen": "conquistas",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/conquistas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/24-conquistas.png",
+      "hash": "dc7a78df398fb6ce3305e3353181ba5ec387b29603c5ddc0ad6364af944d6d4d",
+      "capturedAt": "2026-07-29T11:36:27.784Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/conquistas",
+      "screen": "conquistas",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/conquistas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/24-conquistas.png",
+      "hash": "566f9023becfa19dcd31e494d35d31ba9d06ddd66935a1632b2e044e692e0106",
+      "capturedAt": "2026-07-29T11:36:59.703Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/conquistas",
+      "screen": "conquistas",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/conquistas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/24-conquistas.png",
+      "hash": "8ff12656b00a0d11771919666240e72d6269ac2177c36c2342d33354b032e4e1",
+      "capturedAt": "2026-07-29T11:37:31.500Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/conquistas",
+      "screen": "conquistas",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/conquistas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/24-conquistas.png",
+      "hash": "8a75c9de10a15ee622530655e88e0a5ab2dd8518a0a9daf2946abeb2c0cb3738",
+      "capturedAt": "2026-07-29T11:38:03.231Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/conquistas",
+      "screen": "conquistas",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/conquistas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/24-conquistas.png",
+      "hash": "21d30930f418d0609548a3de2bffa453053e90353c5d5965149a0d5f0c059a1b",
+      "capturedAt": "2026-07-29T11:38:35.626Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/conquistas",
+      "screen": "conquistas",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/conquistas.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/24-conquistas.png",
+      "hash": "d4ab8285eef98d695448a913070ef3f495b6caec987b5a1b04d54fb032c0c40c",
+      "capturedAt": "2026-07-29T11:39:07.561Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/timeline",
+      "screen": "timeline",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/timeline.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/25-timeline.png",
+      "hash": "562e2b29f05a7212ff43aeb1dfcccdde028bdf4bb2978901595a43dbd6ce0049",
+      "capturedAt": "2026-07-29T11:36:28.948Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/timeline",
+      "screen": "timeline",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/timeline.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/25-timeline.png",
+      "hash": "b567b17b370176cb18d2743f4f4c094ed7371f0640547cf0e72a8455e61067ce",
+      "capturedAt": "2026-07-29T11:37:00.849Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/timeline",
+      "screen": "timeline",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/timeline.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/25-timeline.png",
+      "hash": "d8ba0d97687f907153353134234526d5d58258ebfacb6db54925dc5996264257",
+      "capturedAt": "2026-07-29T11:37:32.613Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/timeline",
+      "screen": "timeline",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/timeline.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/25-timeline.png",
+      "hash": "56de6fdd0cb6ac578d0b8ca2055e084fcb5f996a9ce44615a42538a44a335d4e",
+      "capturedAt": "2026-07-29T11:38:04.362Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/timeline",
+      "screen": "timeline",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/timeline.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/25-timeline.png",
+      "hash": "d5bc6223940f1a4dde67b9be5a70b67c15db78524e9b5d517f25a714e1705959",
+      "capturedAt": "2026-07-29T11:38:36.806Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/timeline",
+      "screen": "timeline",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/timeline.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/25-timeline.png",
+      "hash": "1a9bf716a3f9aec8714a8ee45eea281f9b9618c3181feebb63c95280dc7d0dce",
+      "capturedAt": "2026-07-29T11:39:08.694Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/calendario",
+      "screen": "calendario",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/calendario.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/26-calendario.png",
+      "hash": "0f2ecbe69cbfa35e92a324667eb3f788df9bb64100431bc0d3205fd2be675024",
+      "capturedAt": "2026-07-29T11:36:30.030Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/calendario",
+      "screen": "calendario",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/calendario.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/26-calendario.png",
+      "hash": "68da4c3d2fc50f04227e1347ce554e428509628d73a68dec0853b749ff4664cc",
+      "capturedAt": "2026-07-29T11:37:01.914Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/calendario",
+      "screen": "calendario",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/calendario.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/26-calendario.png",
+      "hash": "55fb6a652ee0f23b6545b2aef69c7ef785dbffaae0961b4c583a8e3ed0ddf41c",
+      "capturedAt": "2026-07-29T11:37:33.712Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/calendario",
+      "screen": "calendario",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/calendario.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/26-calendario.png",
+      "hash": "f86120c808143ceea45b5baab995e9ee160c812f54281316cadc60fb08398607",
+      "capturedAt": "2026-07-29T11:38:05.445Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/calendario",
+      "screen": "calendario",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/calendario.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/26-calendario.png",
+      "hash": "dbbde5194a5eef3363bf9bffc4e868606c060919d86141363823433e9434ec0b",
+      "capturedAt": "2026-07-29T11:38:37.903Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/calendario",
+      "screen": "calendario",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/calendario.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/26-calendario.png",
+      "hash": "a9c8f52236a4a075bb7a0348a65baf006340cae80160d78f8900000f742d8126",
+      "capturedAt": "2026-07-29T11:39:09.775Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/notificacoes",
+      "screen": "notificacoes",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/notificacoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/27-notificacoes.png",
+      "hash": "c4a0ff666a21e1ca042063a82d4ed3e218040e38c6b6f078710c4af3a8c37a05",
+      "capturedAt": "2026-07-29T11:36:31.181Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/notificacoes",
+      "screen": "notificacoes",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/notificacoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/27-notificacoes.png",
+      "hash": "499271e0c7f4d6033ac84e24f74a700f10a5a0c6d79df80481e0a4ca50679460",
+      "capturedAt": "2026-07-29T11:37:03.069Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/notificacoes",
+      "screen": "notificacoes",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/notificacoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/27-notificacoes.png",
+      "hash": "9df54debbe49f78c4ffb9c7892a7d1e1cec2363a9db0da48e6a8779a987bc9b5",
+      "capturedAt": "2026-07-29T11:37:34.881Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/notificacoes",
+      "screen": "notificacoes",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/notificacoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/27-notificacoes.png",
+      "hash": "515f206e7672b9168d82b72e8a3e95167ab9c0afcb6be1f18492ee81a1179bc1",
+      "capturedAt": "2026-07-29T11:38:06.633Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/notificacoes",
+      "screen": "notificacoes",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/notificacoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/27-notificacoes.png",
+      "hash": "aac027ed4114e6cbbe452e68259ecdff473dc59e9eee59de74ff7cf231ff564c",
+      "capturedAt": "2026-07-29T11:38:39.038Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/notificacoes",
+      "screen": "notificacoes",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/notificacoes.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/27-notificacoes.png",
+      "hash": "5ab59253f20e516fb778d8dff35133c2fa21b7a95ca21ef057f411bf803b4109",
+      "capturedAt": "2026-07-29T11:39:10.963Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/feedback",
+      "screen": "feedback",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/feedback.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/28-feedback.png",
+      "hash": "729f930f16238ff7f8ca9a22f699f384f657c8175b57b147ce52bd5d229b0b36",
+      "capturedAt": "2026-07-29T11:36:32.318Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/feedback",
+      "screen": "feedback",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/feedback.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/28-feedback.png",
+      "hash": "6a239afb3d49da5bcbb2116cb9f2771ef123ac7707d6c144d5b1e2f56c48a23c",
+      "capturedAt": "2026-07-29T11:37:04.182Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/feedback",
+      "screen": "feedback",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/feedback.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/28-feedback.png",
+      "hash": "1f988615868eea5517f7c0688a16ec7374e0b282078743f9ae20b4e29e1a50fc",
+      "capturedAt": "2026-07-29T11:37:35.999Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/feedback",
+      "screen": "feedback",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/feedback.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/28-feedback.png",
+      "hash": "50fb474db84ee633969211cb4e83a4026c088c20f59d0703cc30ad83e6b97523",
+      "capturedAt": "2026-07-29T11:38:07.747Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/feedback",
+      "screen": "feedback",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/feedback.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/28-feedback.png",
+      "hash": "b573e792cba8cb0da3b99f3ed9c7a123e3543e04f3b01031243be93bba4eec90",
+      "capturedAt": "2026-07-29T11:38:40.204Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/feedback",
+      "screen": "feedback",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/feedback.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/28-feedback.png",
+      "hash": "a73afddf5ab6e0debb4aa3cf47aae232a37ba55eb1e4459e479f3335d100ba75",
+      "capturedAt": "2026-07-29T11:39:12.079Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-small-light/sobre",
+      "screen": "sobre",
+      "device": "android-small-light",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 360,
+        "height": 800
+      },
+      "expectedResolution": {
+        "width": 360,
+        "height": 800
+      },
+      "path": "docs/qa/visual/screenshots/android-small-light/sobre.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/29-sobre.png",
+      "hash": "8721e26ac477da2310f1efd94ee419459f9682510cb9842ee5f8e49d65306f7e",
+      "capturedAt": "2026-07-29T11:36:33.433Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "android-large-dark/sobre",
+      "screen": "sobre",
+      "device": "android-large-dark",
+      "platform": "android",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 412,
+        "height": 915
+      },
+      "expectedResolution": {
+        "width": 412,
+        "height": 915
+      },
+      "path": "docs/qa/visual/screenshots/android-large-dark/sobre.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/29-sobre.png",
+      "hash": "4e08ed1085328a10207ad3a34906b4a98c330bcc4845caaa9fc44334f5955e27",
+      "capturedAt": "2026-07-29T11:37:05.355Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-light/sobre",
+      "screen": "sobre",
+      "device": "iphone-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-light/sobre.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/29-sobre.png",
+      "hash": "89a582138ef694934b57057ee202a069c6d9b0d96cfe722092609275f2cc6a56",
+      "capturedAt": "2026-07-29T11:37:37.168Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "iphone-dark/sobre",
+      "screen": "sobre",
+      "device": "iphone-dark",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "dark",
+      "resolution": {
+        "width": 390,
+        "height": 844
+      },
+      "expectedResolution": {
+        "width": 390,
+        "height": 844
+      },
+      "path": "docs/qa/visual/screenshots/iphone-dark/sobre.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/29-sobre.png",
+      "hash": "cba8b186142535d60d3232670d8ca9b7c1b43bbe982bc7d9adf212eb04e06233",
+      "capturedAt": "2026-07-29T11:38:08.867Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "tablet-light/sobre",
+      "screen": "sobre",
+      "device": "tablet-light",
+      "platform": "ios",
+      "orientation": "portrait",
+      "theme": "light",
+      "resolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "expectedResolution": {
+        "width": 1024,
+        "height": 1366
+      },
+      "path": "docs/qa/visual/screenshots/tablet-light/sobre.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/29-sobre.png",
+      "hash": "2762dda8ec2593e4597b451452a27f9c95195d889d7b9eed4e8bd69b8edb0f97",
+      "capturedAt": "2026-07-29T11:38:41.361Z",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "key": "landscape-dark/sobre",
+      "screen": "sobre",
+      "device": "landscape-dark",
+      "platform": "android",
+      "orientation": "landscape",
+      "theme": "dark",
+      "resolution": {
+        "width": 915,
+        "height": 412
+      },
+      "expectedResolution": {
+        "width": 915,
+        "height": 412
+      },
+      "path": "docs/qa/visual/screenshots/landscape-dark/sobre.png",
+      "prototype": "docs/prototype-book/v1.0/thumbnails/29-sobre.png",
+      "hash": "9d46391a1c2d993f19f9ffb2fa7594bd150a6d7eb7cd123d67e39710f6eb0ad5",
+      "capturedAt": "2026-07-29T11:39:13.193Z",
+      "status": "VALID",
+      "errors": []
+    }
+  ]
+}
