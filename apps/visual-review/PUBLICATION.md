@@ -46,7 +46,7 @@ O build é gerado em `apps/visual-review/dist` e contém:
 Cada commit em `main` que altere o portal, as capturas, os mockups, os manifestos ou os arquivos
 de aprovação executa:
 
-1. instalação determinística com `pnpm`;
+1. instalação das dependências do portal com `npm`;
 2. testes e typecheck do portal;
 3. geração dos dados estáticos;
 4. validação das 168 capturas;
