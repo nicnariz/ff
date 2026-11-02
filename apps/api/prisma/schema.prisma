@@ -100,6 +100,7 @@ model Family {
   rewards Reward[]
   allowances AllowancePeriod[]
   auditLogs AuditLog[]
+  records FamilyRecord[]
 }
 
 model FamilyMember {
@@ -254,4 +255,18 @@ model AuditLog {
   createdAt DateTime @default(now())
   family Family @relation(fields: [familyId], references: [id])
   user User? @relation(fields: [userId], references: [id])
+}
+
+/// Registros do dia a dia da família (tarefas, pontos, recompensas, mesada, metas, notificações…),
+/// no mesmo formato do motor de regras compartilhado com o app. Um registro por linha.
+model FamilyRecord {
+  familyId  String
+  kind      String
+  recordId  String
+  data      Json
+  updatedAt DateTime @default(now()) @updatedAt
+  family    Family   @relation(fields: [familyId], references: [id], onDelete: Cascade)
+
+  @@id([familyId, kind, recordId])
+  @@index([familyId])
 }
