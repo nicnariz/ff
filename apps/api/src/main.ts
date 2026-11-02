@@ -1,3 +1,6 @@
+// Datas do dia a dia ("hoje", semana, horário de silêncio) seguem o horário de Brasília.
+process.env.TZ = process.env.TZ || 'America/Sao_Paulo';
+
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
