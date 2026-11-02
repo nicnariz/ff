@@ -1,8 +1,137 @@
-import { ForbiddenException, Injectable, NotFoundException, UnprocessableEntityException } from '@nestjs/common'; import { createHash, randomBytes } from 'crypto'; import { FamilyMemberRole, InvitationStatus, MemberStatus } from '@prisma/client'; import { FamiliesService } from '../families/families.service'; import { PrismaService } from '../prisma.service'; import { CreateInvitationDto } from './dto/invitation.dto';
-@Injectable() export class InvitationsService { constructor(private readonly prisma:PrismaService,private readonly families:FamiliesService){} private hash(code:string){return createHash('sha256').update(code).digest('hex');} private mask(prefix:string){return `${prefix}••••••••`;}
- async create(userId:string,familyId:string,d:CreateInvitationDto){const m=await this.families.access(userId,familyId);if(m.role!=='ADMIN')throw new ForbiddenException({code:'FAMILY_ACCESS_DENIED'});if(d.role===FamilyMemberRole.ADMIN)throw new UnprocessableEntityException({code:'INVALID_FAMILY_ROLE'});const code=randomBytes(24).toString('base64url');const invitation=await this.prisma.familyInvitation.create({data:{familyId,codeHash:this.hash(code),codePrefix:code.slice(0,6),createdById:userId,role:d.role,expiresAt:new Date(Date.now()+d.expiresInHours*3600000),maximumUses:d.maximumUses}});return {...invitation,code};}
- async list(userId:string,familyId:string){const m=await this.families.access(userId,familyId);if(m.role!=='ADMIN')throw new ForbiddenException({code:'FAMILY_ACCESS_DENIED'});const rows=await this.prisma.familyInvitation.findMany({where:{familyId},orderBy:{createdAt:'desc'}});return rows.map(i=>({id:i.id,familyId:i.familyId,code:this.mask(i.codePrefix),role:i.role,expiresAt:i.expiresAt,maximumUses:i.maximumUses,currentUses:i.currentUses,status:i.status,createdById:i.createdById,createdAt:i.createdAt}));}
- async revoke(userId:string,familyId:string,id:string){const m=await this.families.access(userId,familyId);if(m.role!=='ADMIN')throw new ForbiddenException({code:'FAMILY_ACCESS_DENIED'});const inv=await this.prisma.familyInvitation.findFirst({where:{id,familyId}});if(!inv)throw new NotFoundException({code:'INVITATION_NOT_FOUND'});return this.prisma.familyInvitation.update({where:{id},data:{status:InvitationStatus.REVOKED}});}
- async preview(code:string){const inv=await this.prisma.familyInvitation.findUnique({where:{codeHash:this.hash(code)},include:{family:true}});if(!inv)throw new NotFoundException({code:'INVITATION_NOT_FOUND'});return {familyName:inv.family.name,role:inv.role,expiresAt:inv.expiresAt,status:this.effectiveStatus(inv)};}
- private effectiveStatus(inv:{status:InvitationStatus;expiresAt:Date;currentUses:number;maximumUses:number}){if(inv.status!==InvitationStatus.ACTIVE)return inv.status;if(inv.expiresAt<new Date())return InvitationStatus.EXPIRED;if(inv.currentUses>=inv.maximumUses)return InvitationStatus.FULLY_USED;return inv.status;}
- async accept(userId:string,code:string){return this.prisma.$transaction(async tx=>{const inv=await tx.familyInvitation.findUnique({where:{codeHash:this.hash(code)}});if(!inv)throw new NotFoundException({code:'INVITATION_NOT_FOUND'});if(inv.status===InvitationStatus.REVOKED)throw new UnprocessableEntityException({code:'INVITATION_REVOKED'});if(inv.expiresAt<=new Date())throw new UnprocessableEntityException({code:'INVITATION_EXPIRED'});const existing=await tx.familyMember.findUnique({where:{familyId_userId:{familyId:inv.familyId,userId}}});if(existing?.status==='ACTIVE')throw new UnprocessableEntityException({code:'FAMILY_MEMBER_ALREADY_EXISTS'});const consumed=await tx.familyInvitation.updateMany({where:{id:inv.id,status:InvitationStatus.ACTIVE,expiresAt:{gt:new Date()},currentUses:{lt:inv.maximumUses}},data:{currentUses:{increment:1}}});if(consumed.count!==1){const current=await tx.familyInvitation.findUnique({where:{id:inv.id}});if(current?.status===InvitationStatus.REVOKED)throw new UnprocessableEntityException({code:'INVITATION_REVOKED'});if(current?.expiresAt&&current.expiresAt<=new Date())throw new UnprocessableEntityException({code:'INVITATION_EXPIRED'});throw new UnprocessableEntityException({code:'INVITATION_USAGE_LIMIT_REACHED'});}const updated=await tx.familyInvitation.findUniqueOrThrow({where:{id:inv.id}});if(updated.currentUses>=updated.maximumUses)await tx.familyInvitation.updateMany({where:{id:inv.id,currentUses:{gte:updated.maximumUses}},data:{status:InvitationStatus.FULLY_USED}});const member=existing?await tx.familyMember.update({where:{id:existing.id},data:{role:inv.role,status:MemberStatus.ACTIVE,joinedAt:new Date()}}):await tx.familyMember.create({data:{familyId:inv.familyId,userId,role:inv.role,status:MemberStatus.ACTIVE}});return {familyId:inv.familyId,memberId:member.id,role:member.role};},{isolationLevel:'Serializable'});}}
+import { ForbiddenException, Injectable, NotFoundException, UnprocessableEntityException } from '@nestjs/common';
+import { createHash, randomInt } from 'crypto';
+import { FamilyMemberRole, InvitationStatus, MemberStatus, Prisma } from '@prisma/client';
+import { FamiliesService } from '../families/families.service';
+import { PrismaService } from '../prisma.service';
+import { CreateInvitationDto } from './dto/invitation.dto';
+
+/** Sem 0/O e 1/I para evitar confusão ao digitar. 32 símbolos × 8 posições ≈ 1,1 trilhão de combinações. */
+const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+const CODE_LENGTH = 8;
+
+/** Normaliza o que a pessoa digitou: ignora espaços, hífens e diferença entre maiúsculas e minúsculas. */
+export function normalizeInvitationCode(code: string): string {
+  return code.trim().toUpperCase().replace(/[\s-]/g, '');
+}
+
+export function generateInvitationCode(): string {
+  let code = '';
+  for (let i = 0; i < CODE_LENGTH; i++) code += CODE_ALPHABET[randomInt(CODE_ALPHABET.length)];
+  return code;
+}
+
+@Injectable()
+export class InvitationsService {
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly families: FamiliesService,
+  ) {}
+
+  private hash(code: string) {
+    return createHash('sha256').update(normalizeInvitationCode(code)).digest('hex');
+  }
+
+  private mask(prefix: string) {
+    return `${prefix}••••••`;
+  }
+
+  async create(userId: string, familyId: string, d: CreateInvitationDto) {
+    const m = await this.families.access(userId, familyId);
+    if (m.role !== 'ADMIN') throw new ForbiddenException({ code: 'FAMILY_ACCESS_DENIED' });
+    if (d.role === FamilyMemberRole.ADMIN) throw new UnprocessableEntityException({ code: 'INVALID_FAMILY_ROLE' });
+    // Códigos curtos podem colidir (raro): tenta de novo com outro código.
+    for (let attempt = 0; attempt < 5; attempt++) {
+      const code = generateInvitationCode();
+      try {
+        const invitation = await this.prisma.familyInvitation.create({
+          data: {
+            familyId,
+            codeHash: this.hash(code),
+            codePrefix: code.slice(0, 2),
+            createdById: userId,
+            role: d.role,
+            expiresAt: new Date(Date.now() + d.expiresInHours * 3600000),
+            maximumUses: d.maximumUses,
+          },
+        });
+        return { ...invitation, code };
+      } catch (e) {
+        if (e instanceof Prisma.PrismaClientKnownRequestError && e.code === 'P2002') continue;
+        throw e;
+      }
+    }
+    throw new UnprocessableEntityException({ code: 'INVITATION_CODE_UNAVAILABLE' });
+  }
+
+  async list(userId: string, familyId: string) {
+    const m = await this.families.access(userId, familyId);
+    if (m.role !== 'ADMIN') throw new ForbiddenException({ code: 'FAMILY_ACCESS_DENIED' });
+    const rows = await this.prisma.familyInvitation.findMany({ where: { familyId }, orderBy: { createdAt: 'desc' } });
+    return rows.map((i) => ({
+      id: i.id,
+      familyId: i.familyId,
+      code: this.mask(i.codePrefix),
+      role: i.role,
+      expiresAt: i.expiresAt,
+      maximumUses: i.maximumUses,
+      currentUses: i.currentUses,
+      status: this.effectiveStatus(i),
+      createdById: i.createdById,
+      createdAt: i.createdAt,
+    }));
+  }
+
+  async revoke(userId: string, familyId: string, id: string) {
+    const m = await this.families.access(userId, familyId);
+    if (m.role !== 'ADMIN') throw new ForbiddenException({ code: 'FAMILY_ACCESS_DENIED' });
+    const inv = await this.prisma.familyInvitation.findFirst({ where: { id, familyId } });
+    if (!inv) throw new NotFoundException({ code: 'INVITATION_NOT_FOUND' });
+    return this.prisma.familyInvitation.update({ where: { id }, data: { status: InvitationStatus.REVOKED } });
+  }
+
+  async preview(code: string) {
+    const inv = await this.prisma.familyInvitation.findUnique({ where: { codeHash: this.hash(code) }, include: { family: true } });
+    if (!inv) throw new NotFoundException({ code: 'INVITATION_NOT_FOUND' });
+    return { familyName: inv.family.name, role: inv.role, expiresAt: inv.expiresAt, status: this.effectiveStatus(inv) };
+  }
+
+  private effectiveStatus(inv: { status: InvitationStatus; expiresAt: Date; currentUses: number; maximumUses: number }) {
+    if (inv.status !== InvitationStatus.ACTIVE) return inv.status;
+    if (inv.expiresAt < new Date()) return InvitationStatus.EXPIRED;
+    if (inv.currentUses >= inv.maximumUses) return InvitationStatus.FULLY_USED;
+    return inv.status;
+  }
+
+  async accept(userId: string, code: string) {
+    return this.prisma.$transaction(
+      async (tx) => {
+        const inv = await tx.familyInvitation.findUnique({ where: { codeHash: this.hash(code) } });
+        if (!inv) throw new NotFoundException({ code: 'INVITATION_NOT_FOUND' });
+        if (inv.status === InvitationStatus.REVOKED) throw new UnprocessableEntityException({ code: 'INVITATION_REVOKED' });
+        if (inv.expiresAt <= new Date()) throw new UnprocessableEntityException({ code: 'INVITATION_EXPIRED' });
+        const existing = await tx.familyMember.findUnique({ where: { familyId_userId: { familyId: inv.familyId, userId } } });
+        if (existing?.status === 'ACTIVE') throw new UnprocessableEntityException({ code: 'FAMILY_MEMBER_ALREADY_EXISTS' });
+        const consumed = await tx.familyInvitation.updateMany({
+          where: { id: inv.id, status: InvitationStatus.ACTIVE, expiresAt: { gt: new Date() }, currentUses: { lt: inv.maximumUses } },
+          data: { currentUses: { increment: 1 } },
+        });
+        if (consumed.count !== 1) {
+          const current = await tx.familyInvitation.findUnique({ where: { id: inv.id } });
+          if (current?.status === InvitationStatus.REVOKED) throw new UnprocessableEntityException({ code: 'INVITATION_REVOKED' });
+          if (current?.expiresAt && current.expiresAt <= new Date()) throw new UnprocessableEntityException({ code: 'INVITATION_EXPIRED' });
+          throw new UnprocessableEntityException({ code: 'INVITATION_USAGE_LIMIT_REACHED' });
+        }
+        const updated = await tx.familyInvitation.findUniqueOrThrow({ where: { id: inv.id } });
+        if (updated.currentUses >= updated.maximumUses)
+          await tx.familyInvitation.updateMany({ where: { id: inv.id, currentUses: { gte: updated.maximumUses } }, data: { status: InvitationStatus.FULLY_USED } });
+        // Quem entra como responsável já pode criar e aprovar tarefas.
+        const permissions = FamiliesService.defaultPermissions(inv.role);
+        const member = existing
+          ? await tx.familyMember.update({ where: { id: existing.id }, data: { role: inv.role, status: MemberStatus.ACTIVE, joinedAt: new Date(), ...permissions } })
+          : await tx.familyMember.create({ data: { familyId: inv.familyId, userId, role: inv.role, status: MemberStatus.ACTIVE, ...permissions } });
+        return { familyId: inv.familyId, memberId: member.id, role: member.role };
+      },
+      { isolationLevel: 'Serializable' },
+    );
+  }
+}
