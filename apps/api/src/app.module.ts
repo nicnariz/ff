@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
+import { AccountModule } from './account/account.module';
 import { AuthModule } from './auth/auth.module';
 import { DomainModule } from './domain/domain.module';
 import { FamiliesModule } from './families/families.module';
@@ -8,6 +9,6 @@ import { InvitationsModule } from './invitations/invitations.module';
 import { PrismaModule } from './prisma.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true, validationSchema: Joi.object({ DATABASE_URL: Joi.string().required(), JWT_ACCESS_SECRET: Joi.string().min(32).required(), JWT_REFRESH_SECRET: Joi.string().min(32).required(), JWT_ACCESS_EXPIRES_IN: Joi.string().default('15m'), JWT_REFRESH_EXPIRES_IN: Joi.string().default('7d'), PORT: Joi.number().default(3000) }) }), PrismaModule, AuthModule, FamiliesModule, InvitationsModule, DomainModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true, validationSchema: Joi.object({ DATABASE_URL: Joi.string().required(), JWT_ACCESS_SECRET: Joi.string().min(32).required(), JWT_REFRESH_SECRET: Joi.string().min(32).required(), JWT_ACCESS_EXPIRES_IN: Joi.string().default('15m'), JWT_REFRESH_EXPIRES_IN: Joi.string().default('7d'), PORT: Joi.number().default(3000), PRIVACY_CONTROLLER_NAME: Joi.string().optional(), PRIVACY_CONTACT_EMAIL: Joi.string().email().optional() }) }), PrismaModule, AuthModule, FamiliesModule, InvitationsModule, DomainModule, AccountModule],
 })
 export class AppModule {}
